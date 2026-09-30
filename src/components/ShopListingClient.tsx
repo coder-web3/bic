@@ -375,7 +375,7 @@ export default function ShopListingClient({ products, categories: initialCategor
                   >
                     <div className="flex items-center gap-3">
                       <span className={isActive ? "text-[#E62E2D]" : "text-gray-500"}>
-                        {renderCategoryIcon(cat.icon, cat.name)}
+                        {renderCategoryIcon((cat as any).icon, cat.name)}
                       </span>
                       <span className="truncate">{cat.name}</span>
                     </div>

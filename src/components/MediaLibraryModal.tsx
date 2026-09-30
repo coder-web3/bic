@@ -33,6 +33,7 @@ interface MediaLibraryModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSelectImage?: (url: string, alt?: string) => void;
+  onSelectMedia?: (url: string, alt?: string) => void;
   onSelect?: (url: string, alt?: string) => void;
   currentImageUrl?: string;
 }
@@ -93,6 +94,7 @@ export default function MediaLibraryModal({
   isOpen,
   onClose,
   onSelectImage,
+  onSelectMedia,
   onSelect,
   currentImageUrl = ""
 }: MediaLibraryModalProps) {
@@ -254,7 +256,7 @@ export default function MediaLibraryModal({
   };
 
   const handleConfirmSelection = () => {
-    const callback = onSelectImage || onSelect;
+    const callback = onSelectImage || onSelectMedia || onSelect;
     const finalUrl = activeTab === "customUrl" && customInputUrl.trim() ? customInputUrl.trim() : selectedUrl;
     const finalAlt = (activeTab === "customUrl" ? customInputAlt.trim() : selectedAlt.trim()) || undefined;
 
