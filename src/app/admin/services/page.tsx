@@ -82,94 +82,120 @@ function normalizeSubServices(servicesData: any[]) {
   });
 }
 
-// Helper to ensure rich standard defaults for a child capability
+// Helper to ensure rich standard defaults for a child capability without overriding empty string edits
 function ensureChildDefaults(parentService: any, subService: any, child: any) {
   if (!child) return child;
-  const title = child.title || "Specialized Capability";
+  const title = child.title ?? "Specialized Capability";
   const childSlug = child.slug || child.link || slugify(title);
 
   return {
     ...child,
-    id: child.id || "01",
-    title: title,
+    id: child.id ?? "01",
+    title: child.title ?? title,
     slug: childSlug,
-    badge: child.badge || `${title.toUpperCase()} · SPECIALIZED CAPABILITY`,
-    subtitle: child.subtitle || `${title} Execution & Solutions in Saudi Arabia`,
-    shortDesc: child.shortDesc || child.desc || `Specialized ${title.toLowerCase()} execution compliant with Saudi Aramco and international quality standards.`,
-    fullDesc: child.fullDesc || child.desc || "",
+    badge: child.badge !== undefined ? child.badge : `${title.toUpperCase()} · SPECIALIZED CAPABILITY`,
+    subtitle: child.subtitle !== undefined ? child.subtitle : `${title} Execution & Solutions in Saudi Arabia`,
+    shortDesc: child.shortDesc !== undefined ? child.shortDesc : (child.desc !== undefined ? child.desc : ""),
+    fullDesc: child.fullDesc !== undefined ? child.fullDesc : (child.desc !== undefined ? child.desc : ""),
     heroImage: child.heroImage || child.image || subService?.heroImage || subService?.image || parentService?.heroImage || "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=2070&auto=format&fit=crop",
-    heroImageAlt: child.heroImageAlt || child.imageAlt || `${title} Hero Image`,
-    heroWatermark: child.heroWatermark || "BIC",
-    heroTaglines: child.heroTaglines || [
+    heroImageAlt: child.heroImageAlt !== undefined ? child.heroImageAlt : `${title} Hero Image`,
+    heroWatermark: child.heroWatermark !== undefined ? child.heroWatermark : "BIC",
+    heroTaglines: Array.isArray(child.heroTaglines) ? child.heroTaglines : [
       "Saudi Aramco & SABIC Compliant",
       "Certified Field Supervisors & Technicians",
       "Modern Tooling & Heavy Fleet Support",
       "Kingdom-Wide Fast Mobilization"
     ],
-    heroStats: child.heroStats || [
+    heroStats: Array.isArray(child.heroStats) ? child.heroStats : [
       { value: "100%", label: "Compliance & Safety" },
       { value: "24/7", label: "Rapid Mobilization" },
       { value: "30+", label: "Years Experience" },
       { value: "ISO", label: "Certified QA/QC" }
     ],
-    overview: child.overview || {
+    overview: child.overview ? {
+      ...child.overview,
+      badge: child.overview.badge !== undefined ? child.overview.badge : "EXECUTIVE OVERVIEW",
+      title: child.overview.title !== undefined ? child.overview.title : `${title} Solutions Built for High-Demand Industrial Projects`,
+      desc1: child.overview.desc1 !== undefined ? child.overview.desc1 : "",
+      desc2: child.overview.desc2 !== undefined ? child.overview.desc2 : "",
+      specs: Array.isArray(child.overview.specs) ? child.overview.specs : [],
+      image: child.overview.image !== undefined ? child.overview.image : "",
+      imageAlt: child.overview.imageAlt !== undefined ? child.overview.imageAlt : `${title} Overview Image 1`,
+      image2: child.overview.image2 !== undefined ? child.overview.image2 : "",
+      image2Alt: child.overview.image2Alt !== undefined ? child.overview.image2Alt : `${title} Overview Image 2`,
+      image3: child.overview.image3 !== undefined ? child.overview.image3 : "",
+      image3Alt: child.overview.image3Alt !== undefined ? child.overview.image3Alt : `${title} Overview Image 3`,
+      image4: child.overview.image4 !== undefined ? child.overview.image4 : "",
+      image4Alt: child.overview.image4Alt !== undefined ? child.overview.image4Alt : `${title} Overview Image 4`,
+      statNum: child.overview.statNum !== undefined ? child.overview.statNum : "100+",
+      statLabel: child.overview.statLabel !== undefined ? child.overview.statLabel : "Successful Contracts",
+      statSub: child.overview.statSub !== undefined ? child.overview.statSub : "Across Saudi Arabia",
+      standardsTitle: child.overview.standardsTitle !== undefined ? child.overview.standardsTitle : "Saudi Aramco & Royal Commission Standards",
+      standardsDesc: child.overview.standardsDesc !== undefined ? child.overview.standardsDesc : "Our QA/QC procedures enforce rigid quality plans, non-destructive testing (NDT), calibrated tooling, and complete safety documentation."
+    } : {
       title: `${title} Solutions Built for High-Demand Industrial Projects`,
       badge: "EXECUTIVE OVERVIEW",
-      desc1: child.desc || `Best International Contracting Company provides turnkey ${title.toLowerCase()} across Saudi Arabia, ensuring precision execution, safety compliance, and disciplined milestone delivery.`,
-      desc2: `Operating with in-house equipment, certified technicians, and strict Saudi Aramco & SABIC HSE standards, we execute ${title.toLowerCase()} requirements from greenfield developments to turnaround maintenance overhauls.`,
+      desc1: child.desc || `Best International Contracting Company provides turnkey ${title.toLowerCase()} across Saudi Arabia.`,
+      desc2: `Operating with in-house equipment, certified technicians, and strict Saudi Aramco & SABIC HSE standards.`,
       specs: [
         "Saudi Aramco & SABIC Approved Contractor Standards",
-        "ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 Certified",
-        "Comprehensive Project Management & QA/QC Documentation",
-        "Rapid Kingdom-Wide Mobilization across Eastern, Central & Western Provinces"
+        "ISO 9001:2015 Certified",
+        "Comprehensive Project Management & QA/QC Documentation"
       ],
-      image: child.overview?.image || child.image || subService?.image || "",
-      imageAlt: child.overview?.imageAlt || `${title} Executive Overview Image 1`,
-      image2: child.overview?.image2 || child.image2 || subService?.image2 || "",
-      image2Alt: child.overview?.image2Alt || `${title} Overview Image 2`,
-      image3: child.overview?.image3 || child.image3 || subService?.image3 || "",
-      image3Alt: child.overview?.image3Alt || `${title} Overview Image 3`,
-      image4: child.overview?.image4 || child.image4 || subService?.image4 || "",
-      image4Alt: child.overview?.image4Alt || `${title} Overview Image 4`,
+      image: child.image || subService?.image || "",
+      imageAlt: `${title} Executive Overview Image 1`,
+      image2: "",
+      image2Alt: `${title} Overview Image 2`,
+      image3: "",
+      image3Alt: `${title} Overview Image 3`,
+      image4: "",
+      image4Alt: `${title} Overview Image 4`,
       statNum: "100+",
       statLabel: "Successful Contracts",
       statSub: "Across Saudi Arabia",
       standardsTitle: "Saudi Aramco & Royal Commission Standards",
       standardsDesc: "Our QA/QC procedures enforce rigid quality plans, non-destructive testing (NDT), calibrated tooling, and complete safety documentation."
     },
-    subServicesBadge: child.subServicesBadge || "RELATED WORK PACKAGES",
-    subServicesTitle: child.subServicesTitle || `Related ${subService?.title || "Discipline"} Capabilities`,
-    subServicesDesc: child.subServicesDesc || `Explore complementary work packages and execution capabilities.`,
+    subServicesBadge: child.subServicesBadge !== undefined ? child.subServicesBadge : "",
+    subServicesTitle: child.subServicesTitle !== undefined ? child.subServicesTitle : "",
+    subServicesDesc: child.subServicesDesc !== undefined ? child.subServicesDesc : "",
     subServices: Array.isArray(child.subServices) ? child.subServices : [],
-    whyChooseUsBadge: child.whyChooseUsBadge || "WHY BEST INTERNATIONAL",
-    whyChooseUsTitle: child.whyChooseUsTitle || `Why Choose BIC for ${title}?`,
-    whyChooseUsDesc: child.whyChooseUsDesc || `We eliminate project risks by combining heavy equipment independence, Saudi Aramco certified supervisors, and strict QA/QC compliance.`,
+    whyChooseUsBadge: child.whyChooseUsBadge !== undefined ? child.whyChooseUsBadge : "",
+    whyChooseUsTitle: child.whyChooseUsTitle !== undefined ? child.whyChooseUsTitle : "",
+    whyChooseUsDesc: child.whyChooseUsDesc !== undefined ? child.whyChooseUsDesc : "",
     whyChooseUs: Array.isArray(child.whyChooseUs) ? child.whyChooseUs : [],
-    industriesBadge: child.industriesBadge || "SECTOR APPLICATIONS",
-    industriesTitle: child.industriesTitle || `Industries Powered by Our ${title}`,
-    industriesDesc: child.industriesDesc || `Delivering specialized ${title.toLowerCase()} solutions to the Kingdom's vital industrial and civil sectors.`,
+    industriesBadge: child.industriesBadge !== undefined ? child.industriesBadge : "",
+    industriesTitle: child.industriesTitle !== undefined ? child.industriesTitle : "",
+    industriesDesc: child.industriesDesc !== undefined ? child.industriesDesc : "",
     industries: Array.isArray(child.industries) ? child.industries : [],
-    showcaseBadge: child.showcaseBadge || "DETAILED EXECUTION",
-    showcaseTitle: child.showcaseTitle || `Comprehensive ${title} Execution Framework`,
-    showcaseDesc: child.showcaseDesc || `From pre-planning to field execution and quality sign-off, we provide complete lifecycle delivery.`,
+    showcaseBadge: child.showcaseBadge !== undefined ? child.showcaseBadge : "",
+    showcaseTitle: child.showcaseTitle !== undefined ? child.showcaseTitle : "",
+    showcaseDesc: child.showcaseDesc !== undefined ? child.showcaseDesc : "",
     showcaseTabs: Array.isArray(child.showcaseTabs) ? child.showcaseTabs : [],
-    faqsBadge: child.faqsBadge || "FREQUENTLY ASKED QUESTIONS",
-    faqsTitle: child.faqsTitle || `Common Questions About ${title}`,
-    faqsDesc: child.faqsDesc || `Clear answers regarding our ${title.toLowerCase()} workflows, site access, and deliverables.`,
+    faqsBadge: child.faqsBadge !== undefined ? child.faqsBadge : "",
+    faqsTitle: child.faqsTitle !== undefined ? child.faqsTitle : "",
+    faqsDesc: child.faqsDesc !== undefined ? child.faqsDesc : "",
     faqs: Array.isArray(child.faqs) ? child.faqs : [],
-    cta: child.cta || {
-      badge: "LET'S BUILD TOGETHER",
+    cta: child.cta ? {
+      ...child.cta,
+      badge: child.cta.badge !== undefined ? child.cta.badge : "READY TO EXECUTE YOUR PROJECT?",
+      title: child.cta.title !== undefined ? child.cta.title : `Need Reliable ${title} for Your Next Project?`,
+      desc: child.cta.desc !== undefined ? child.cta.desc : "Get in touch with Best International Contracting Company.",
+      buttonText: child.cta.buttonText !== undefined ? child.cta.buttonText : "Request Technical Proposal",
+      buttonLink: child.cta.buttonLink !== undefined ? child.cta.buttonLink : "/contact-us"
+    } : {
+      badge: "READY TO EXECUTE YOUR PROJECT?",
       title: `Need Reliable ${title} for Your Next Project?`,
       desc: `Get in touch with Best International Contracting Company to discuss project specifications, schedule site visits, or request technical proposals.`,
       buttonText: "Request Technical Proposal",
       buttonLink: "/contact-us"
     },
-    metaTitle: child.metaTitle || `${title} Saudi Arabia | Best International Contracting - BiC`,
-    metaDescription: child.metaDescription || child.desc || `Expert ${title.toLowerCase()} in Saudi Arabia. Aramco & SABIC approved contractor delivering turnkey industrial excellence across KSA.`,
-    canonicalUrl: child.canonicalUrl || "",
-    focusKeyword: child.focusKeyword || `${title} Saudi Arabia`,
+    metaTitle: child.metaTitle !== undefined ? child.metaTitle : `${title} Saudi Arabia | Best International Contracting - BiC`,
+    metaDescription: child.metaDescription !== undefined ? child.metaDescription : (child.desc || ""),
+    canonicalUrl: child.canonicalUrl !== undefined ? child.canonicalUrl : "",
+    focusKeyword: child.focusKeyword !== undefined ? child.focusKeyword : `${title} Saudi Arabia`,
     ogImage: child.ogImage || child.heroImage || child.image || subService?.heroImage || parentService?.heroImage,
-    customSchema: child.customSchema || ""
+    customSchema: child.customSchema !== undefined ? child.customSchema : ""
   };
 }
 
