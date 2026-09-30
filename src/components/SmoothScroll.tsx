@@ -25,13 +25,12 @@ export default function SmoothScroll() {
         if (tagName === "textarea" || tagName === "input" || tagName === "select") {
           return true;
         }
-        return (
-          node.hasAttribute?.("data-lenis-prevent") ||
-          node.closest?.("[data-lenis-prevent]") !== null ||
-          node.classList?.contains?.("lenis-prevent") ||
-          node.closest?.(".lenis-prevent") !== null ||
-          node.closest?.(".custom-scrollbar") !== null
-        );
+        // Only prevent if element is inside an active modal dialog
+        const modalEl = node.closest?.("[role='dialog'], .modal-body");
+        if (modalEl) {
+          return true;
+        }
+        return false;
       },
     });
 

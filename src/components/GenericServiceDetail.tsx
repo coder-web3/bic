@@ -531,7 +531,8 @@ export default function GenericServiceDetail({
     if (!el) return;
 
     const onWheel = (e: WheelEvent) => {
-      if (Math.abs(e.deltaY) > 0 || Math.abs(e.deltaX) > 0) {
+      // Allow natural vertical page scroll unless Shift key is held or horizontal swipe gesture
+      if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
         const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
         const maxScroll = el.scrollWidth - el.clientWidth;
         if (maxScroll > 0) {
@@ -703,7 +704,6 @@ export default function GenericServiceDetail({
               </h2>
 
               <div
-                data-lenis-prevent
                 className="max-h-[170px] overflow-y-auto pr-4 mb-8 text-gray-600 text-xs sm:text-sm leading-relaxed space-y-3 text-justify overscroll-contain"
                 style={{ scrollbarWidth: "thin", scrollbarColor: "#E62E2D #f1f1f1" }}
               >
@@ -988,7 +988,6 @@ export default function GenericServiceDetail({
               </div>
 
               <div
-                data-lenis-prevent
                 className="flex-1 overflow-y-auto space-y-2 pr-1.5 overscroll-contain [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-red-400"
               >
                 {activeShowcaseTabs.map((tab: any, index: number) => {
@@ -1045,7 +1044,6 @@ export default function GenericServiceDetail({
                 >
                   {/* Left Column: Text & Features (xl:col-span-7) with internal vertical scroll */}
                   <div
-                    data-lenis-prevent
                     className="xl:col-span-7 flex flex-col justify-start overflow-y-auto pr-3 overscroll-contain h-full max-h-[460px] sm:max-h-[500px] lg:max-h-[550px] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#E62E2D] [&::-webkit-scrollbar-thumb]:rounded-full"
                     style={{ scrollbarWidth: "thin", scrollbarColor: "#E62E2D #f1f1f1" }}
                   >
@@ -1199,7 +1197,6 @@ export default function GenericServiceDetail({
 
           <div
             ref={scrollContainerRef}
-            data-lenis-prevent
             onScroll={handleScrollEvent}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
@@ -1826,7 +1823,6 @@ export default function GenericServiceDetail({
 
                   {/* Subtitle / Description with smooth internal scroll */}
                   <div
-                    data-lenis-prevent
                     className="max-h-[110px] sm:max-h-[130px] overflow-y-auto pr-3 mb-8 scrollbar-thin scrollbar-thumb-gray-300 hover:scrollbar-thumb-[#E62E2D] overscroll-contain"
                   >
                     <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-xl font-normal text-justify">

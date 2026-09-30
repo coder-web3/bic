@@ -55,7 +55,8 @@ export default function ServicesSection({ data }: { data?: any }) {
       window.addEventListener("resize", checkScroll);
 
       const onWheel = (e: WheelEvent) => {
-        if (Math.abs(e.deltaY) > 0 || Math.abs(e.deltaX) > 0) {
+        // Allow natural vertical page scroll unless Shift key is held or horizontal swipe gesture
+        if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
           const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
           const maxScroll = el.scrollWidth - el.clientWidth;
           if (maxScroll > 0) {
@@ -227,7 +228,6 @@ export default function ServicesSection({ data }: { data?: any }) {
       <div className="relative w-full z-10">
         <div 
           ref={scrollRef}
-          data-lenis-prevent
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUpOrLeave}
