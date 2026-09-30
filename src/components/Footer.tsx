@@ -445,7 +445,7 @@ export default function Footer({ initialSettings }: FooterProps) {
                 </h4>
                 <div className="w-6 h-[2px] bg-[#E62E2D] mt-1.5 mb-3.5" />
                 <ul className="flex flex-col gap-2 text-xs sm:text-sm">
-                  {informationLinks.map((item) => (
+                  {informationLinks.map((item: { id?: string; name: string; path: string }) => (
                     <li key={item.id || item.name}>
                       <Link 
                         href={item.path} 

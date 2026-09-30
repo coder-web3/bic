@@ -899,7 +899,7 @@ export default function AdminGalleryPage() {
       <MediaLibraryModal
         isOpen={mediaModalOpen}
         onClose={() => setMediaModalOpen(false)}
-        onSelectMedia={handleSelectMedia}
+        onSelect={handleSelectMedia}
       />
     </div>
   );

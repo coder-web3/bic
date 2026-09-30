@@ -141,7 +141,7 @@ interface ShopListingClientProps {
 }
 
 export default function ShopListingClient({ products, categories: initialCategories }: ShopListingClientProps) {
-  const dynamicCategories = useMemo(() => {
+  const dynamicCategories = useMemo<ShopCategory[]>(() => {
     if (initialCategories && initialCategories.length > 0) {
       return initialCategories;
     }
