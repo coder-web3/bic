@@ -174,15 +174,15 @@ export function buildCompleteSubServiceData(parentService: any, sub: any) {
     }));
   }
 
-  // Resolve whyChooseUs: if explicitly defined, use it. If undefined, inherit parent.
+  // Resolve whyChooseUs: if explicitly defined, use it. If undefined, empty array.
   const resolvedWhyChooseUs = Array.isArray(sub.whyChooseUs)
     ? sub.whyChooseUs
-    : (Array.isArray(parentService?.whyChooseUs) ? parentService.whyChooseUs : []);
+    : [];
 
-  // Resolve industries: if explicitly defined, use it. If undefined, inherit parent.
+  // Resolve industries: if explicitly defined, use it. If undefined, empty array.
   const resolvedIndustries = Array.isArray(sub.industries)
     ? sub.industries
-    : (Array.isArray(parentService?.industries) ? parentService.industries : []);
+    : [];
 
   // Resolve showcaseTabs: if explicitly defined, use it. If undefined, empty.
   const resolvedShowcaseTabs = Array.isArray(sub.showcaseTabs)
@@ -282,15 +282,15 @@ export function buildCompleteChildServiceData(parentService: any, subService: an
       }));
   }
 
-  // Resolve whyChooseUs: if explicitly defined, use it. If undefined, inherit subService/parent.
+  // Resolve whyChooseUs: if explicitly defined, use it. If undefined, empty array.
   const resolvedWhyChooseUs = Array.isArray(child.whyChooseUs)
     ? child.whyChooseUs
-    : (Array.isArray(subService?.whyChooseUs) ? subService.whyChooseUs : (Array.isArray(parentService?.whyChooseUs) ? parentService.whyChooseUs : []));
+    : [];
 
-  // Resolve industries: if explicitly defined, use it. If undefined, inherit subService/parent.
+  // Resolve industries: if explicitly defined, use it. If undefined, empty array.
   const resolvedIndustries = Array.isArray(child.industries)
     ? child.industries
-    : (Array.isArray(subService?.industries) ? subService.industries : (Array.isArray(parentService?.industries) ? parentService.industries : []));
+    : [];
 
   // Resolve showcaseTabs: if explicitly defined, use it. If undefined, empty.
   const resolvedShowcaseTabs = Array.isArray(child.showcaseTabs)

@@ -549,19 +549,19 @@ export default function ContractingServiceDetail({ serviceData }: { serviceData?
 
   const activeWhyChooseUs = Array.isArray(data?.whyChooseUs)
     ? data.whyChooseUs
-    : (Array.isArray(whyChooseUsData) ? whyChooseUsData : []);
+    : (data ? [] : (Array.isArray(whyChooseUsData) ? whyChooseUsData : []));
 
   const activeIndustries = Array.isArray(data?.industries)
     ? data.industries
-    : (Array.isArray(industriesList) ? industriesList : []);
+    : (data ? [] : (Array.isArray(industriesList) ? industriesList : []));
 
   const activeShowcaseTabs = Array.isArray(data?.showcaseTabs)
     ? data.showcaseTabs
-    : (Array.isArray(contractingSolutionsTabs) ? contractingSolutionsTabs : []);
+    : (data ? [] : (Array.isArray(contractingSolutionsTabs) ? contractingSolutionsTabs : []));
 
   const activeFaqs = Array.isArray(data?.faqs)
     ? data.faqs
-    : (Array.isArray(faqData) ? faqData : []);
+    : (data ? [] : (Array.isArray(faqData) ? faqData : []));
 
   const hasOverview = Boolean(
     (data?.overview?.title && data.overview.title.trim().length > 0) ||

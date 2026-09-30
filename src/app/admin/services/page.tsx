@@ -144,53 +144,19 @@ function ensureChildDefaults(parentService: any, subService: any, child: any) {
     whyChooseUsBadge: child.whyChooseUsBadge || "WHY BEST INTERNATIONAL",
     whyChooseUsTitle: child.whyChooseUsTitle || `Why Choose BIC for ${title}?`,
     whyChooseUsDesc: child.whyChooseUsDesc || `We eliminate project risks by combining heavy equipment independence, Saudi Aramco certified supervisors, and strict QA/QC compliance.`,
-    whyChooseUs: (Array.isArray(child.whyChooseUs) && child.whyChooseUs.length > 0) ? child.whyChooseUs : (subService?.whyChooseUs || parentService?.whyChooseUs || [
-      {
-        id: "01",
-        title: "Certified Safety & QA/QC Compliance",
-        desc: "Rigid compliance with Aramco, SABIC, and international engineering standards.",
-        image: "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
-      }
-    ]),
+    whyChooseUs: Array.isArray(child.whyChooseUs) ? child.whyChooseUs : [],
     industriesBadge: child.industriesBadge || "SECTOR APPLICATIONS",
     industriesTitle: child.industriesTitle || `Industries Powered by Our ${title}`,
     industriesDesc: child.industriesDesc || `Delivering specialized ${title.toLowerCase()} solutions to the Kingdom's vital industrial and civil sectors.`,
-    industries: (Array.isArray(child.industries) && child.industries.length > 0) ? child.industries : (subService?.industries || parentService?.industries || [
-      {
-        id: "01",
-        name: "Oil & Gas Refineries",
-        desc: "Critical facilities support with certified crews and safety systems.",
-        image: "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
-      }
-    ]),
+    industries: Array.isArray(child.industries) ? child.industries : [],
     showcaseBadge: child.showcaseBadge || "DETAILED EXECUTION",
     showcaseTitle: child.showcaseTitle || `Comprehensive ${title} Execution Framework`,
     showcaseDesc: child.showcaseDesc || `From pre-planning to field execution and quality sign-off, we provide complete lifecycle delivery.`,
-    showcaseTabs: (Array.isArray(child.showcaseTabs) && child.showcaseTabs.length > 0) ? child.showcaseTabs : [
-      {
-        id: "scope-overview",
-        name: "Scope & Capabilities",
-        title: `${title} Solutions`,
-        badge: "SCOPE & EXECUTION",
-        desc: child.desc || `Comprehensive ${title.toLowerCase()} delivered to Saudi Aramco, SABIC, and international industrial benchmarks across Saudi Arabia.`,
-        image: child.image || subService?.image || "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
-        features: (Array.isArray(child.tags) && child.tags.length > 0) ? child.tags : ["Certified Operators & Supervisors", "Aramco Compliance", "Modern Fleet Support", "Zero-Accident Protocols"],
-        stats: { num: "100%", label: "Safety & QA/QC Compliance" }
-      }
-    ],
+    showcaseTabs: Array.isArray(child.showcaseTabs) ? child.showcaseTabs : [],
     faqsBadge: child.faqsBadge || "FREQUENTLY ASKED QUESTIONS",
     faqsTitle: child.faqsTitle || `Common Questions About ${title}`,
     faqsDesc: child.faqsDesc || `Clear answers regarding our ${title.toLowerCase()} workflows, site access, and deliverables.`,
-    faqs: (Array.isArray(child.faqs) && child.faqs.length > 0) ? child.faqs : [
-      {
-        q: `What is the mobilization time for ${title} projects in Saudi Arabia?`,
-        a: `Depending on the site location (Jubail, Dammam, Yanbu, Riyadh, or remote areas), we can mobilize certified crews, supervisors, and equipment within 24 to 48 hours following commercial sign-off.`
-      },
-      {
-        q: `Do you comply with Saudi Aramco and SABIC engineering standards for ${title}?`,
-        a: `Yes. Best International Contracting operates strictly within Saudi Aramco (SAES/SAMSS), SABIC, and Royal Commission standards with complete inspection test plans (ITP).`
-      }
-    ],
+    faqs: Array.isArray(child.faqs) ? child.faqs : [],
     cta: child.cta || {
       badge: "LET'S BUILD TOGETHER",
       title: `Need Reliable ${title} for Your Next Project?`,
