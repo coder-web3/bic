@@ -13,7 +13,23 @@ interface HeaderProps {
 export default function Header({ initialSettings }: HeaderProps) {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [settings, setSettings] = useState<SiteSettings>(initialSettings || (defaultSettings as unknown as SiteSettings));
+
+  // Sync scroll position to collapse top bar when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Sync settings dynamically on client
   useEffect(() => {
@@ -43,9 +59,15 @@ export default function Header({ initialSettings }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
       
-      {/* Top Utility Bar */}
+      {/* Top Utility Bar (Collapses smoothly on scroll) */}
       {header.showTopBar !== false && (
-        <div className="bg-[#080a0f]/95 border-b border-white/[0.08] text-gray-300 py-2 px-6 sm:px-10 md:px-14 flex justify-center text-[12px] tracking-wide backdrop-blur-md">
+        <div
+          className={`transition-all duration-300 ease-in-out bg-[#080a0f]/95 text-gray-300 flex justify-center text-[12px] tracking-wide backdrop-blur-md overflow-hidden ${
+            scrolled
+              ? "max-h-0 opacity-0 -translate-y-full py-0 border-none pointer-events-none"
+              : "max-h-16 opacity-100 translate-y-0 py-2 px-6 sm:px-10 md:px-14 border-b border-white/[0.08]"
+          }`}
+        >
           <div className="max-w-[1650px] w-full mx-auto flex items-center justify-between">
             
             {/* Left Contact Details */}
@@ -118,8 +140,14 @@ export default function Header({ initialSettings }: HeaderProps) {
         </div>
       )}
 
-      {/* Main Navigation Bar */}
-      <div className="bg-[#0e1218]/90 backdrop-blur-xl text-white py-3.5 px-6 sm:px-10 md:px-14 flex justify-center border-b border-white/[0.09] shadow-2xl">
+      {/* Main Navigation Bar (Remains Sticky & Sleek on Scroll) */}
+      <div
+        className={`transition-all duration-300 text-white flex justify-center border-b border-white/[0.09] ${
+          scrolled
+            ? "bg-[#080a0f]/95 backdrop-blur-xl py-2.5 px-6 sm:px-10 md:px-14 shadow-[0_10px_30px_rgba(0,0,0,0.6)]"
+            : "bg-[#0e1218]/90 backdrop-blur-xl py-3.5 px-6 sm:px-10 md:px-14 shadow-2xl"
+        }`}
+      >
         <div className="max-w-[1650px] w-full mx-auto flex items-center justify-between">
           
           {/* Brand Logo */}
@@ -128,7 +156,9 @@ export default function Header({ initialSettings }: HeaderProps) {
               <img 
                 src={logoSrc} 
                 alt={logoAlt} 
-                className="h-12 md:h-14 lg:h-16 w-auto object-contain rounded-sm drop-shadow-md"
+                className={`w-auto object-contain rounded-sm drop-shadow-md transition-all duration-300 ${
+                  scrolled ? "h-10 md:h-12 lg:h-13" : "h-12 md:h-14 lg:h-16"
+                }`}
               />
             </div>
           </Link>

@@ -42,5 +42,42 @@
     "description": "Explore on-site construction photos, heavy equipment fleet, pipe fabrication, and plant turnaround operations in Saudi Arabia.",
     "focusKeyword": "Best International Contracting Gallery Saudi Arabia"
   },
-  "images": []
+  "images": [
+    {
+      "id": "gal-1",
+      "src": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1200&auto=format&fit=crop",
+      "category": "Fleet Operations",
+      "title": "Heavy Fleet Operations"
+    },
+    {
+      "id": "gal-2",
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
+      "category": "Civil Works",
+      "title": "Civil Infrastructure Foundations"
+    },
+    {
+      "id": "gal-3",
+      "src": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1200&auto=format&fit=crop",
+      "category": "Plant Maintenance",
+      "title": "Petrochemical Plant Maintenance"
+    },
+    {
+      "id": "gal-4",
+      "src": "https://images.unsplash.com/photo-1504307651254-35680f356f12?q=80&w=1200&auto=format&fit=crop",
+      "category": "Industrial Access",
+      "title": "Engineered Scaffolding & Access"
+    },
+    {
+      "id": "gal-5",
+      "src": "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=1200&auto=format&fit=crop",
+      "category": "Heavy Lifting",
+      "title": "Heavy Crane Lifting Solutions"
+    },
+    {
+      "id": "gal-6",
+      "src": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
+      "category": "Mechanical Works",
+      "title": "Process Piping & Fabrication"
+    }
+  ]
 }

@@ -119,6 +119,18 @@ export default function AdminGalleryPage() {
     });
   };
 
+  // Helper to update specific image item by index directly
+  const updateImageItem = (index: number, field: string, value: any) => {
+    setData((prev: any) => {
+      const copy = JSON.parse(JSON.stringify(prev || {}));
+      const imgs = Array.isArray(copy.images) ? [...copy.images] : [];
+      if (index >= 0 && index < imgs.length) {
+        imgs[index] = { ...imgs[index], [field]: value };
+      }
+      return { ...copy, images: imgs };
+    });
+  };
+
   // Open Media Library Modal for a specific path
   const openMediaFor = (pathStr: string) => {
     setTargetFieldPath(pathStr);
@@ -127,8 +139,29 @@ export default function AdminGalleryPage() {
 
   // Callback when an image is selected in the media library
   const handleSelectMedia = (url: string) => {
+    if (!url) {
+      setMediaModalOpen(false);
+      setTargetFieldPath(null);
+      return;
+    }
+
     if (targetFieldPath === "newImage.src") {
       setNewImage((prev) => ({ ...prev, src: url }));
+    } else if (targetFieldPath === "quickAdd") {
+      const newItem = {
+        id: `gal-${Date.now()}`,
+        src: url,
+        category: filterCategory !== "All" ? filterCategory : "Fleet Operations",
+      };
+      setData((prev: any) => ({
+        ...prev,
+        images: [newItem, ...(prev?.images || [])],
+      }));
+    } else if (targetFieldPath?.startsWith("images.")) {
+      const parts = targetFieldPath.split(".");
+      const idx = parseInt(parts[1], 10);
+      const field = parts[2] || "src";
+      updateImageItem(idx, field, url);
     } else if (targetFieldPath) {
       updateField(targetFieldPath, url);
     }
@@ -145,7 +178,7 @@ export default function AdminGalleryPage() {
     const newItem = {
       id: `gal-${Date.now()}`,
       src: newImage.src.trim(),
-      category: newImage.category.trim() || "General",
+      category: newImage.category.trim() || "Fleet Operations",
     };
     setData((prev: any) => ({
       ...prev,
@@ -368,14 +401,27 @@ export default function AdminGalleryPage() {
               </select>
             </div>
 
-            {/* Add New Media Button */}
-            <button
-              onClick={() => setShowAddModal(true)}
-              className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-black text-white text-xs font-bold flex items-center gap-2 transition cursor-pointer shadow-xs"
-            >
-              <Plus size={14} />
-              <span>Add New Photo</span>
-            </button>
+            {/* Action Buttons */}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => openMediaFor("quickAdd")}
+                className="px-4 py-2 rounded-xl bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 text-xs font-bold flex items-center gap-1.5 transition cursor-pointer shadow-2xs"
+                title="Pick an image from Media Library and immediately add to gallery"
+              >
+                <Upload size={14} />
+                <span>+ Pick from Media Library</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setShowAddModal(true)}
+                className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-black text-white text-xs font-bold flex items-center gap-2 transition cursor-pointer shadow-xs"
+              >
+                <Plus size={14} />
+                <span>Add Custom URL</span>
+              </button>
+            </div>
           </div>
 
           {/* Add Image Modal */}
@@ -388,7 +434,7 @@ export default function AdminGalleryPage() {
                 </div>
                 <button
                   onClick={() => setShowAddModal(false)}
-                  className="text-slate-400 hover:text-white text-xs"
+                  className="text-slate-400 hover:text-white text-xs cursor-pointer"
                 >
                   Cancel
                 </button>
@@ -410,7 +456,7 @@ export default function AdminGalleryPage() {
                     <button
                       type="button"
                       onClick={() => openMediaFor("newImage.src")}
-                      className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white rounded-xl flex items-center gap-1.5 transition"
+                      className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white rounded-xl flex items-center gap-1.5 transition cursor-pointer"
                     >
                       <Upload size={13} />
                       <span>Library</span>
@@ -445,14 +491,14 @@ export default function AdminGalleryPage() {
                 <button
                   type="button"
                   onClick={() => setShowAddModal(false)}
-                  className="px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white"
+                  className="px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white cursor-pointer"
                 >
                   Cancel
                 </button>
                 <button
                   type="button"
                   onClick={handleAddImage}
-                  className="px-5 py-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow-md"
+                  className="px-5 py-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold rounded-xl flex items-center gap-1.5 shadow-md cursor-pointer"
                 >
                   <Plus size={14} />
                   <span>Insert Photo into Gallery</span>
@@ -465,19 +511,24 @@ export default function AdminGalleryPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filteredImages.map((item: any, idx: number) => {
               const originalIndex = images.findIndex((x: any) => x === item || (x.id && x.id === item.id) || (x.src === item.src && x.category === item.category));
-              const num = String(originalIndex + 1).padStart(2, "0");
+              const safeIndex = originalIndex >= 0 ? originalIndex : idx;
+              const num = String(safeIndex + 1).padStart(2, "0");
 
               return (
                 <div
-                  key={item.id || idx}
+                  key={item.id || `gal-${safeIndex}`}
                   className="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-2xs hover:shadow-md transition-all flex flex-col group"
                 >
                   {/* Image Preview Container */}
-                  <div className="relative h-48 sm:h-52 bg-slate-950 overflow-hidden">
+                  <div 
+                    onClick={() => openMediaFor(`images.${safeIndex}.src`)}
+                    className="relative h-48 sm:h-52 bg-slate-950 overflow-hidden cursor-pointer group/img"
+                    title="Click to change image from Media Library"
+                  >
                     <img
                       src={item.src}
                       alt={`Gallery Asset ${num}`}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
@@ -487,32 +538,45 @@ export default function AdminGalleryPage() {
                     </div>
 
                     {/* Category Tag */}
-                    <div className="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-[#E62E2D] text-white text-[10px] font-bold uppercase tracking-wider">
-                      {item.category || "General"}
+                    <div className="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-[#E62E2D] text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                      {item.category || "Fleet Operations"}
+                    </div>
+
+                    {/* Replace Image Overlay Prompt */}
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="px-3 py-1.5 rounded-lg bg-white/90 text-slate-900 text-xs font-bold flex items-center gap-1.5 shadow-lg">
+                        <Upload size={13} className="text-[#E62E2D]" /> Change Photo
+                      </span>
                     </div>
 
                     {/* Quick Move & Delete Actions Overlay */}
-                    <div className="absolute bottom-3 right-3 flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition">
+                    <div 
+                      onClick={(e) => e.stopPropagation()}
+                      className="absolute bottom-3 right-3 flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition z-10"
+                    >
                       <button
-                        onClick={() => handleMoveImage(originalIndex, "up")}
-                        disabled={originalIndex === 0}
+                        type="button"
+                        onClick={() => handleMoveImage(safeIndex, "up")}
+                        disabled={safeIndex === 0}
                         title="Move Up"
-                        className="w-7 h-7 rounded-lg bg-black/60 hover:bg-black text-white flex items-center justify-center disabled:opacity-30 transition cursor-pointer"
+                        className="w-7 h-7 rounded-lg bg-black/70 hover:bg-black text-white flex items-center justify-center disabled:opacity-30 transition cursor-pointer"
                       >
                         <ArrowUp size={13} />
                       </button>
                       <button
-                        onClick={() => handleMoveImage(originalIndex, "down")}
-                        disabled={originalIndex === images.length - 1}
+                        type="button"
+                        onClick={() => handleMoveImage(safeIndex, "down")}
+                        disabled={safeIndex === images.length - 1}
                         title="Move Down"
-                        className="w-7 h-7 rounded-lg bg-black/60 hover:bg-black text-white flex items-center justify-center disabled:opacity-30 transition cursor-pointer"
+                        className="w-7 h-7 rounded-lg bg-black/70 hover:bg-black text-white flex items-center justify-center disabled:opacity-30 transition cursor-pointer"
                       >
                         <ArrowDown size={13} />
                       </button>
                       <button
-                        onClick={() => handleDeleteImage(originalIndex)}
+                        type="button"
+                        onClick={() => handleDeleteImage(safeIndex)}
                         title="Delete Image"
-                        className="w-7 h-7 rounded-lg bg-red-600 hover:bg-red-700 text-white flex items-center justify-center transition cursor-pointer"
+                        className="w-7 h-7 rounded-lg bg-red-600 hover:bg-red-700 text-white flex items-center justify-center transition cursor-pointer shadow-xs"
                       >
                         <Trash2 size={13} />
                       </button>
@@ -526,8 +590,8 @@ export default function AdminGalleryPage() {
                         Category Tag
                       </label>
                       <select
-                        value={item.category || "General"}
-                        onChange={(e) => updateField(`images.${originalIndex}.category`, e.target.value)}
+                        value={item.category || "Fleet Operations"}
+                        onChange={(e) => updateImageItem(safeIndex, "category", e.target.value)}
                         className="w-full text-xs py-1.5 px-2.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white font-medium text-slate-800 focus:outline-none focus:border-[#E62E2D]"
                       >
                         {DEFAULT_CATEGORIES.map((c) => (
@@ -544,12 +608,13 @@ export default function AdminGalleryPage() {
                         <input
                           type="text"
                           value={item.src}
-                          onChange={(e) => updateField(`images.${originalIndex}.src`, e.target.value)}
+                          onChange={(e) => updateImageItem(safeIndex, "src", e.target.value)}
                           className="flex-1 text-[11px] py-1 px-2 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white text-slate-700 font-mono truncate"
                         />
                         <button
-                          onClick={() => openMediaFor(`images.${originalIndex}.src`)}
-                          className="p-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 transition"
+                          type="button"
+                          onClick={() => openMediaFor(`images.${safeIndex}.src`)}
+                          className="p-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 text-slate-600 transition cursor-pointer"
                           title="Choose from media library"
                         >
                           <Upload size={12} />
@@ -898,8 +963,13 @@ export default function AdminGalleryPage() {
       {/* ── MEDIA LIBRARY MODAL ───────────────────────────────────── */}
       <MediaLibraryModal
         isOpen={mediaModalOpen}
-        onClose={() => setMediaModalOpen(false)}
+        onClose={() => {
+          setMediaModalOpen(false);
+          setTargetFieldPath(null);
+        }}
         onSelect={handleSelectMedia}
+        onSelectMedia={handleSelectMedia}
+        onSelectImage={handleSelectMedia}
       />
     </div>
   );

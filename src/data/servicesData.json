@@ -2043,7 +2043,7 @@
     "overview": {
       "title": "Equipment Rental Company in Saudi Arabia",
       "badge": "Project-Ready Equipment Rental",
-      "desc1": "Keeping a project moving requires the right equipment at the right time. Best International Contracting Company provides contractors, industrial operators and facility teams and project owners with reliable equipment hire solutions in temporary works, intended construction operations, maintenance programmes and site operations throughout Saudi Arabia.\n\n",
+      "desc1": "Keeping a project moving requires the right equipment at the right time. Best International Contracting Company provides contractors, industrial operators and facility teams and project owners with reliable equipment hire solutions in temporary works, intended construction operations, maintenance programmes and site operations throughout Saudi Arabia.",
       "desc2": "Our rental service takes the power, lifting, earth moving equipment and transportation services and manages them all in a coordinated service. Rather than having to deal with multiple rental sources to find the right machinery to use according to the site requirements, the clients can deal with a single team to find the right equipment and ensure availability, mobilisation and support during the agreed period of the rental.\n\nRegardless of the need to have one machine to perform a one-time task, or multiple types of equipment to work on a more lasting project, we pay attention to the worthwhile selection, clarity of communication and location-specific organization. We are designed as a company that would want to rent heavy equipment rental Saudi Arabia without any unnecessary complexity and delays.",
       "specs": [
         "Equipment Selection",
@@ -2074,13 +2074,280 @@
           {
             "id": "01",
             "title": "Generator Rental for Temporary and Standby Power",
-            "slug": "generators",
-            "desc": "Reliable temporary and standby power solutions for construction sites, industrial facilities and projects requiring uninterrupted electricity.",
+            "slug": "generator-rental",
+            "desc": "Reliable generator rental across Saudi Arabia for construction, industrial, maintenance, warehouse and temporary power requirements.",
             "tags": [
               "Generators",
               "Saudi Standards"
             ],
-            "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop"
+            "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+            "badge": "GENERATOR RENTAL",
+            "subtitle": "Temporary & Standby Power",
+            "shortDesc": "Reliable generator rental across Saudi Arabia for construction, industrial, maintenance, warehouse and temporary power requirements.",
+            "fullDesc": "Reliable generator rental across Saudi Arabia for construction, industrial, maintenance, warehouse and temporary power requirements.",
+            "heroImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+            "heroImageAlt": "Generator Rental for Temporary and Standby Power Hero Image",
+            "heroWatermark": "BIC",
+            "heroTaglines": [
+              "Saudi Aramco & SABIC Compliant",
+              "Certified Field Supervisors & Technicians",
+              "Modern Tooling & Heavy Fleet Support",
+              "Kingdom-Wide Fast Mobilization"
+            ],
+            "heroStats": [
+              {
+                "value": "100%",
+                "label": "Compliance & Safety"
+              },
+              {
+                "value": "24/7",
+                "label": "Rapid Mobilization"
+              },
+              {
+                "value": "30+",
+                "label": "Years Experience"
+              },
+              {
+                "value": "ISO",
+                "label": "Certified QA/QC"
+              }
+            ],
+            "overview": {
+              "title": "Generator Rental in Saudi Arabia",
+              "badge": "EXECUTIVE OVERVIEW",
+              "desc1": "Reliable temporary power is important when permanent electricity is unavailable, interrupted, or not yet ready for use. Construction sites, industrial facilities, maintenance projects, warehouses, workshops, and infrastructure work may all require a generator for a defined period or specific activity.",
+              "desc2": "Best International Contracting Company provides generator rental support for project requirements across Saudi Arabia. Each enquiry is reviewed around the actual application, including the equipment that needs power, expected operating hours, site conditions, delivery location, rental duration, and any project-specific access requirements.\n\nFor customers looking for generator rental across Saudi Arabia, the aim is to establish a practical rental scope based on the work to be supported rather than selecting a generator only by a requested size.\n\nCustomers who also require tower lights, air compressors or welding machines can explore our Power Equipment Rental in Saudi Arabia services for related temporary power and site-support equipment.",
+              "specs": [
+                "Temporary & Standby Power Solutions",
+                "Generators for Construction & Industrial Sites",
+                "Flexible Short-Term & Long-Term Rental",
+                "Planned Delivery & Site Mobilisation"
+              ],
+              "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+              "imageAlt": "Generator Rental for Temporary and Standby Power Executive Overview Image 1",
+              "image2": "",
+              "image2Alt": "Generator Rental for Temporary and Standby Power Overview Image 2",
+              "image3": "",
+              "image3Alt": "Generator Rental for Temporary and Standby Power Overview Image 3",
+              "image4": "",
+              "image4Alt": "Generator Rental for Temporary and Standby Power Overview Image 4",
+              "statNum": "24/7",
+              "statLabel": "Power Support",
+              "statSub": "Across Saudi Arabia",
+              "standardsTitle": "Reliable Equipment & Safety Standards",
+              "standardsDesc": "Generator rental support is planned around application, operating hours, site conditions, delivery requirements and project-specific safety needs."
+            },
+            "subServicesBadge": "R",
+            "subServicesTitle": "R",
+            "subServicesDesc": "E",
+            "subServices": [],
+            "whyChooseUsBadge": "WHY BEST INTERNATIONAL",
+            "whyChooseUsTitle": "Why Work With Best International Contracting Company ?",
+            "whyChooseUsDesc": "Best International Contracting Company supports construction and industrial customers through equipment rental and wider project services.",
+            "whyChooseUs": [
+              {
+                "id": "01",
+                "title": "What needs electrical power?",
+                "desc": "",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "08",
+                "title": "Where will the generator operate?",
+                "desc": "",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "03",
+                "title": "When is it required?",
+                "desc": "",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "04",
+                "title": "How long will it be used?",
+                "desc": "",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "05",
+                "title": "What site conditions need to be considered?",
+                "desc": "",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "06",
+                "title": "What information is available about the connected loads?",
+                "desc": "",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              }
+            ],
+            "industriesBadge": "SECTOR APPLICATIONS",
+            "industriesTitle": "Industries and Project Environments We Support",
+            "industriesDesc": "D",
+            "industries": [
+              {
+                "id": "01",
+                "name": "Construction and Civil Projects",
+                "desc": "Temporary generators can support suitable site facilities, lighting, pumps, tools, workshops, and selected construction requirements while permanent electrical supply is unavailable or incomplete.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "02",
+                "name": "Industrial Facilities",
+                "desc": "Generator rental may be required for maintenance activities, temporary work areas, shutdown work, project modifications, and selected equipment within industrial facilities.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "03",
+                "name": "Oil, Gas and Petrochemical Projects",
+                "desc": "Temporary power requirements in these environments need to be reviewed around site procedures, access conditions, work schedules, operating requirements, and documentation communicated by the customer.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "04",
+                "name": "Infrastructure Projects",
+                "desc": "Road, drainage, pipeline, survey, and other field-based activities may require temporary electrical power at locations where permanent supply is not available at the point of work.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "05",
+                "name": "Warehouses and Logistics Facilities",
+                "desc": "Temporary generators may be considered for defined facility or equipment requirements during maintenance, project work, or other temporary operating conditions.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "06",
+                "name": "Maintenance and Shutdown Projects",
+                "desc": "Generator rental can support planned electrical requirements associated with inspection, repair, modification, maintenance, and shutdown programmes.\n\n",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "07",
+                "name": "Events and Temporary Facilities",
+                "desc": "Temporary generators can provide power for site offices, temporary facilities, service areas, lighting systems, and other defined electrical requirements where permanent connections are not yet available.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              },
+              {
+                "id": "08",
+                "name": "Remote and Field Operations",
+                "desc": "Generator rental can support remote work locations, temporary camps, field teams, equipment areas, and project activities where access to a reliable permanent power source is limited.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+              }
+            ],
+            "showcaseBadge": "DETAILED EXECUTION",
+            "showcaseTitle": "Comprehensive Generator Rental for Temporary and Standby Power Execution Framework",
+            "showcaseDesc": "From pre-planning to field execution and quality sign-off, we provide complete lifecycle delivery.",
+            "showcaseTabs": [
+              {
+                "id": "scope-overview",
+                "name": "Temporary Power for Construction, Industrial and Project Work",
+                "title": "Temporary Power for Construction, Industrial and Project Work",
+                "badge": "SCOPE & EXECUTION",
+                "desc": "Generator requirements can vary significantly from one site to another.\n\nA generator supporting temporary offices and lighting may have different operating requirements from one supplying pumps, motors, workshop equipment, or selected construction activities. Electrical demand may also change as a project moves from mobilisation into installation, maintenance, testing, or commissioning.\n\nBefore confirming a rental requirement, it is useful to understand:\n\n- What equipment will be connected\n\n- Available voltage, phase, and frequency information\n- Key Scope / Deliverable\n- Expected operating hour\n- Starting and running loads\n- Generator location\n- Site access and delivery conditions\n- Ventilation and surrounding conditions\n- Required start date\n- Expected rental duration\n\n\nThis information provides a practical starting point for reviewing the generator requirement.",
+                "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+                "features": [],
+                "stats": {
+                  "num": "100%",
+                  "label": "Safety & QA/QC Compliance"
+                }
+              },
+              {
+                "id": "tab-2",
+                "name": "Generator Rental for Construction Sites",
+                "title": "Generator Rental for Construction Sites",
+                "badge": "SPECIALIZED CAPABILITY",
+                "desc": "Construction projects often need temporary electricity before permanent utilities are available or while electrical infrastructure is still being completed.\n\nA rental generator may support suitable temporary requirements such as:\n\n- Site offices\n- Temporary facilities\n- Lighting\n- Pumps\n- Power tools\n- Workshop activities\n- Selected construction equipment\n- Testing or commissioning activities\n\nOur construction site generator rental KSA service is reviewed according to the stage of the project and the loads that are expected to operate during that period.\n\nPower requirements can change as construction progresses. A generator selected for early mobilisation may not necessarily match the requirements of later project activities. Customers should therefore advise us when connected loads or operating conditions change so the rental arrangement can be reviewed.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
+                "features": [],
+                "stats": {
+                  "num": "100%",
+                  "label": "Standard Compliance"
+                }
+              },
+              {
+                "id": "tab-3",
+                "name": "Industrial Generator Rental in Jubail",
+                "title": "Industrial Generator Rental in Jubail",
+                "badge": "SPECIALIZED CAPABILITY",
+                "desc": "Industrial and maintenance projects in Jubail may require temporary electrical power for planned work, shutdown activities, temporary facilities, workshops, or selected operational requirements.\n\nFor industrial generator rental Jubail enquiries, we review the proposed application together with site access, operating hours, generator positioning, rental duration, connected equipment, and any project requirements that need to be considered before mobilisation.\n\nIndustrial sites may also have their own procedures for vehicle and equipment entry, working hours, inspections, documentation, and approved operating locations.\n\nProviding these details early helps establish a clearer rental scope and supports better coordination before delivery.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
+                "features": [],
+                "stats": {
+                  "num": "100%",
+                  "label": "Standard Compliance"
+                }
+              },
+              {
+                "id": "tab-4",
+                "name": "Generator Rental in Dammam",
+                "title": "Generator Rental in Dammam",
+                "badge": "SPECIALIZED CAPABILITY",
+                "desc": "Temporary power requirements in Dammam may arise on construction sites, industrial premises, warehouses, workshops, infrastructure projects, and commercial facilities.\n\nOur generator rental Dammam service is arranged around the intended use of the equipment, delivery location, site conditions, expected electrical demand, and required rental period.\n\nSome requirements may involve a generator for a short project activity, while others may continue through several stages of work.\n\nSharing the expected project programme at the enquiry stage helps us understand when the generator is required and how long the rental is expected to continue.\n\nGenerator requirements in other parts of the Eastern Province can also be reviewed according to equipment availability, transportation requirements, site conditions, and the agreed scope of work.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
+                "features": [],
+                "stats": {
+                  "num": "100%",
+                  "label": "Standard Compliance"
+                }
+              },
+              {
+                "id": "tab-5",
+                "name": "Temporary Generator Rental for Short-Term and Project Requirements",
+                "title": "Temporary Generator Rental for Short-Term and Project Requirements",
+                "badge": "SPECIALIZED CAPABILITY",
+                "desc": "Not every temporary power requirement justifies purchasing and maintaining permanent equipment.\n\nOur temporary generator rental Saudi Arabia service can support defined project needs during construction, maintenance, shutdowns, temporary operations, mobilisation, or other planned activities where electrical power is required for a limited period.\n\nThe rental period should be considered alongside:\n\n1. Mobilisation date\nProject start date\nExpected operating period\nPlanned changes in site activity\nDemobilisation requirements\n1. Milestone Execution Step\n\n\nIf the project programme changes or the generator may be required for longer than originally expected, the rental team should be informed early so availability and the updated period can be reviewed.Not every temporary power requirement justifies purchasing and maintaining permanent equipment.\n\nOur temporary generator rental Saudi Arabia service can support defined project needs during construction, maintenance, shutdowns, temporary operations, mobilisation, or other planned activities where electrical power is required for a limited period.\n\nThe rental period should be considered alongside:\n\n1. Mobilisation \ndate\n2. Project start date\n3. Expected operating period\n4. Planned changes in site activity\n\nDemobilisation requirements\nIf the project programme changes or the generator may be required for longer than originally expected, the rental team should be informed early so availability and the updated period can be reviewed.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
+                "features": [
+                  "Key Deliverable 1",
+                  "Key Deliverable 2",
+                  "QA/QC Inspection"
+                ],
+                "stats": {
+                  "num": "100%",
+                  "label": "Standard Compliance"
+                }
+              },
+              {
+                "id": "tab-6",
+                "name": "Power Generator Rental Based on Actual Electrical Demand",
+                "title": "Power Generator Rental Based on Actual Electrical Demand",
+                "badge": "SPECIALIZED CAPABILITY",
+                "desc": "Selecting a generator should begin with understanding what needs electricity.\n\nOur power generator rental Saudi Arabia service considers the connected equipment, available electrical information, expected running hours, starting requirements, operating sequence, and site conditions provided by the customer.\n\nMotors, pumps, and similar equipment can require particular attention because their starting demand may differ from their normal operating demand.\n\nFor an initial enquiry, useful information can include:\n\n1. Equipment list\n2. Equipment nameplate details\n3. Voltage\n4. Phase\n5. Frequency\n6. Expected operating hours\n7. Approximate operating sequence\n8. Proposed generator location\n\nCustomers do not need to have every technical detail available before contacting us. Information that is already available can be shared first, with remaining requirements clarified before the rental scope is confirmed.",
+                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
+                "features": [],
+                "stats": {
+                  "num": "100%",
+                  "label": "Standard Compliance"
+                }
+              }
+            ],
+            "faqsBadge": "FREQUENTLY ASKED QUESTIONS",
+            "faqsTitle": "Common Questions About Generator Rental for Temporary and Standby Power",
+            "faqsDesc": "Clear answers regarding our generator rental for temporary and standby power workflows, site access, and deliverables.",
+            "faqs": [
+              {
+                "q": "What is the mobilization time for Generator Rental for Temporary and Standby Power projects in Saudi Arabia?",
+                "a": "Depending on the site location (Jubail, Dammam, Yanbu, Riyadh, or remote areas), we can mobilize certified crews, supervisors, and equipment within 24 to 48 hours following commercial sign-off."
+              },
+              {
+                "q": "Do you comply with Saudi Aramco and SABIC engineering standards for Generator Rental for Temporary and Standby Power?",
+                "a": "Yes. Best International Contracting operates strictly within Saudi Aramco (SAES/SAMSS), SABIC, and Royal Commission standards with complete inspection test plans (ITP)."
+              }
+            ],
+            "cta": {
+              "badge": "LET'S BUILD TOGETHER",
+              "title": "Need Reliable Generator Rental for Temporary and Standby Power for Your Next Project?",
+              "desc": "Get in touch with Best International Contracting Company to discuss project specifications, schedule site visits, or request technical proposals.",
+              "buttonText": "Request Technical Proposal",
+              "buttonLink": "/contact-us"
+            },
+            "metaTitle": "Generator Rental for Temporary and Standby Power Saudi Arabia | Best International Contracting - BiC",
+            "metaDescription": "Reliable temporary and standby power solutions for construction sites, industrial facilities and projects requiring uninterrupted electricity.",
+            "canonicalUrl": "",
+            "focusKeyword": "Generator Rental for Temporary and Standby Power Saudi Arabia",
+            "ogImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
+            "customSchema": ""
           },
           {
             "id": "02",
@@ -3731,7 +3998,7 @@
       {
         "id": "01",
         "title": "A Flexible Rental Approach for Different Project Requirements",
-        "desc": "Construction and industrial activities hardly have a uni-faceted pattern of renting. Particular assignments require short-term assistance, whereas bigger projects require equipment during a few months or during several working periods. Our rental system will fit various operating hours and location.",
+        "desc": "Construction and industrial activities hardly have a uni-faceted pattern of renting. Particular assignments require short-term assistance, whereas bigger projects require equipment during a few months or during several working periods. Our rental system will fit various operating hours and location.\n\n- Short term renting of temporary work, emergency replacements and short term site work.\n- Long term rental of continuous construction, industry and project programmes.\n- Single-unit rental when a specific machine or vehicle is required.\n- Multi-equipment coordination of the projects which need power, lifting, earthmoving and transport support.\n- Arrangements operator-supported with appropriate personnel being needed and individually verified.\n- Planned mobilisation to Jubail, Dammam and other project locations across Saudi Arabia, subject to access and availability.\n\n\nThis flexibility enhances the applicability of the service by the procurement team evaluating construction equipment rental KSA alternatives and industrial users who require a coordinated equipment package but not a single machine.",
         "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
         "features": [
           "Short term renting of temporary work, emergency replacements and short term site work.",
@@ -3746,7 +4013,7 @@
       {
         "id": "02",
         "title": "Choosing the Right Equipment for the Job",
-        "desc": "Such a choice of equipment by model name may cause unnecessary issues. A machine that works well in a particular environment might not be applicable in another site where there is a limited access, soft ground, lack of clearance or variant production requirements. Project teams ought to take into consideration the following before asking to be quoted:",
+        "desc": "Such a choice of equipment by model name may cause unnecessary issues. A machine that works well in a particular environment might not be applicable in another site where there is a limited access, soft ground, lack of clearance or variant production requirements. Project teams ought to take into consideration the following before asking to be quoted:\n\n- The precise work that the equipment should carry out.\n- Capacity, reach, lifting height, bucket size or load rating needed.\n- Ground condition, working space available and access route.\n- Hours of operation per day and total hours that should be rented.\n- Fuel, power connection or other site-support considerations.\n- The need or requirement of an experienced operator or driver.\n- Site induction, permit, safety documentation or client approval documentation.\n\nEarly provision of such details assists in determining an option that would be practical and be able to plan well on the industrial equipment rental Saudi Arabia projects.",
         "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
         "features": [
           "The precise work that the equipment should carry out.",
@@ -3774,18 +4041,14 @@
         "badge": "SCOPE & EXECUTION",
         "desc": "The type of equipment required in excavation, lifting, material movement, temporary power and site transportation activities is very different. An appropriate rental agreement should thus not just be based on the name of the equipment. The final selection may depend on capacity, working conditions, access conditions, working duration, the mobilisation route and schedule of the project.\n\nBeing an industrial and machinery rental company Saudi Arabia that Saudi Arabia project teams can turn to in order to have a coordinated assistance, BIC assists its clients in specifying need in question prior to the equipment being allocated. This minimises the danger of ordering machinery that is not large enough, or which does not fit the location or which is not in stock within the necessary mobilisation timeframe.\n\nDaily, weekly, monthly or project rental can be set up, depending on the availability of equipment and commercial conditions. Clients can order single units or can put several categories together in a single project rental plan.",
         "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
-        "features": [
-          "Feature 1",
-          "Feature 2",
-          "Feature 3"
-        ]
+        "features": []
       },
       {
         "id": "tab-5",
         "name": "How Our Equipment Rental Process Works",
         "title": "How Our Equipment Rental Process Works",
         "badge": "SPECIALIZED CAPABILITY",
-        "desc": "",
+        "desc": "- Disseminate project requirement. Give the type of equipment, proposed work, location of the site, the date when the equipment should be made available, the anticipated rental time and any available capacity or access requirements.\n- Check the operating conditions. Our team takes into consideration the use of the equipment in terms of how and where, such as the area of work, topography, lifting or loading need, space constraints and path of mobilisation.\n- Authenticate an appropriate lease. Equipment available is aligned with the project requirement. The commercial terms are made clear including the duration of the rental, mobilisation arrangements and support requirements which are to be confirmed before confirmation.\n- Support the term of the rent. Communication is maintained during the period of the rental to ensure that the issues of operation, extension of the rental or planning of the returns are dealt with in a well-organised way.\n- Check the operating conditions. Our team takes into consideration the use of the equipment in terms of how and where, such as the area of work, topography, lifting or loading need, space constraints and path of mobilisation.\n- Coordinate mobilisation. Site mobilisation or delivery shall be carried out in accordance with the agreed schedule, access instructions of the site and other project specifications.\n- Arrange off-hire and return. The equipment will be returned or demobilised at the expiry of the agreed period in accordance with the rental agreement.\n\n",
         "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
         "features": [
           "Disseminate project requirement. Give the type of equipment, proposed work, location of the site, the date when the equipment should be made available, the anticipated rental time and any available capacity or access requirements.",
