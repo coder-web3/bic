@@ -1,0 +1,212 @@
+{
+  "general": {
+    "siteName": "Best International Contracting",
+    "shortName": "BiC",
+    "siteTagline": "Industrial Solutions Saudi Arabia",
+    "logoUrl": "/uploads/upload-1790419154891-logo.png",
+    "logoDarkUrl": "/bic-logo.jpg",
+    "logoAlt": "Best International Contracting Logo",
+    "faviconUrl": "/uploads/upload-1790411215652-best_logo-01.png",
+    "phone": "+966 54 750 4485",
+    "email": "info@bestincontracting.com",
+    "address": "King Fahd Road, Al Olaya District, Riyadh, Saudi Arabia",
+    "accreditationBadge": "Aramco Approved Contractor"
+  },
+  "header": {
+    "showTopBar": true,
+    "phone": "+966 54 750 4485",
+    "email": "info@bestincontracting.com",
+    "address": "Riyadh, Kingdom of Saudi Arabia",
+    "badgeText": "Aramco Approved Contractor",
+    "showBadge": true,
+    "showSocials": true,
+    "showLanguage": true,
+    "navLinks": [
+      {
+        "id": "1",
+        "name": "HOME",
+        "path": "/"
+      },
+      {
+        "id": "2",
+        "name": "ABOUT US",
+        "path": "/about-us"
+      },
+      {
+        "id": "3",
+        "name": "SERVICES",
+        "path": "/services"
+      },
+      {
+        "id": "4",
+        "name": "PROJECTS",
+        "path": "/projects"
+      },
+      {
+        "id": "5",
+        "name": "CLIENTS",
+        "path": "/clients"
+      },
+      {
+        "id": "6",
+        "name": "PRODUCTS",
+        "path": "/shop"
+      },
+      {
+        "id": "7",
+        "name": "BLOG",
+        "path": "/blog"
+      },
+      {
+        "id": "8",
+        "name": "CONTACT US",
+        "path": "/contact-us"
+      }
+    ],
+    "ctaButton": {
+      "show": true,
+      "text": "GET A QUOTE",
+      "url": "/contact-us"
+    }
+  },
+  "footer": {
+    "aboutText": "Delivering integrated industrial, civil, mechanical, piping and electrical solutions with a commitment to quality, safety and sustainable growth across Saudi Arabia and beyond.",
+    "logoUrl": "/uploads/upload-1790419154891-logo.png",
+    "logoAlt": "Best International Contracting Logo",
+    "address": "King Fahd Road, Al Olaya District\nRiyadh, Saudi Arabia",
+    "email": "info@bestincontracting.com",
+    "workingHours": "Sat-Thu 8am - 5pm",
+    "directionText": "Visit Us",
+    "directionUrl": "/contact-us",
+    "copyrightText": "Best International Contracting Company, All rights reserved.",
+    "badge1": "Quality Driven",
+    "badge2": "Trusted Partnership",
+    "badge3": "Sustainable Growth",
+    "sloganTitle": "BUILDING",
+    "sloganSubtitle": "A STRONGER TOMORROW",
+    "phone1": "+966 54 750 4465",
+    "phone1Label": "KSA",
+    "phone2": "+966 50 206 6423",
+    "phone2Label": "KSA",
+    "phone3": "+971 55 601 6007",
+    "phone3Label": "UAE",
+    "locationCity": "RIYADH",
+    "locationCountry": "SAUDI ARABIA",
+    "ctaBanner": {
+      "show": true,
+      "badge": "LET'S BUILD TOGETHER",
+      "titleWhite": "Have a Project",
+      "titleRed": "in Mind?",
+      "description": "Get in touch with our team for a customized solution. We are ready to support your next project with expertise and reliability.",
+      "quoteButtonText": "GET A QUOTE",
+      "quoteButtonUrl": "/contact-us",
+      "brochureButtonText": "OUR BROCHURE",
+      "brochureButtonUrl": "/about-us",
+      "bgImageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356f12?q=80&w=2070&auto=format&fit=crop"
+    },
+    "quickLinksTitle": "Quick Links",
+    "quickLinks": [
+      {
+        "id": "1",
+        "name": "Home",
+        "path": "/"
+      },
+      {
+        "id": "2",
+        "name": "About Us",
+        "path": "/about-us"
+      },
+      {
+        "id": "3",
+        "name": "Career",
+        "path": "/contact-us"
+      },
+      {
+        "id": "4",
+        "name": "Blog",
+        "path": "/blog"
+      },
+      {
+        "id": "5",
+        "name": "Contact us",
+        "path": "/contact-us"
+      }
+    ],
+    "servicesTitle": "Services",
+    "serviceLinks": [
+      {
+        "id": "1",
+        "name": "Equipment Rental",
+        "path": "/services/equipment-rental"
+      },
+      {
+        "id": "2",
+        "name": "Material Supply",
+        "path": "/services/industrial-material-supply"
+      },
+      {
+        "id": "3",
+        "name": "Manpower Service",
+        "path": "/services/manpower-supply"
+      },
+      {
+        "id": "4",
+        "name": "Contracting Services",
+        "path": "/services/contracting-services"
+      },
+      {
+        "id": "1790575670433",
+        "name": "demo",
+        "path": "/"
+      }
+    ],
+    "informationTitle": "Information",
+    "informationLinks": [
+      {
+        "id": "1",
+        "name": "Shop",
+        "path": "/shop"
+      },
+      {
+        "id": "2",
+        "name": "Enquiry Cart",
+        "path": "/contact-us"
+      },
+      {
+        "id": "3",
+        "name": "Make an Inquiry",
+        "path": "/contact-us"
+      },
+      {
+        "id": "4",
+        "name": "Privacy",
+        "path": "#"
+      },
+      {
+        "id": "5",
+        "name": "Terms & Conditions",
+        "path": "#"
+      }
+    ],
+    "bottomCtaText": "GET A QUOTE",
+    "bottomCtaUrl": "/contact-us",
+    "bottomLinks": [
+      {
+        "id": "1",
+        "name": "Privacy",
+        "path": "#"
+      },
+      {
+        "id": "2",
+        "name": "Terms & Conditions",
+        "path": "#"
+      }
+    ]
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/company/best-international-contracting",
+    "twitter": "https://twitter.com/bic_saudi",
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com"
+  }
+}

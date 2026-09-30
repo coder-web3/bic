@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cat-3952",
+    "name": "Scaffolding Base & Support Components",
+    "slug": "scaffolding-base-support-components",
+    "icon": "crane"
+  },
+  {
+    "id": "cat-7243",
+    "name": "Cuplock Scaffolding Components",
+    "slug": "cuplock-scaffolding-components",
+    "icon": "crane"
+  },
+  {
+    "id": "cat-6031",
+    "name": "Scaffolding Pipes",
+    "slug": "scaffolding-pipes",
+    "icon": "crane"
+  },
+  {
+    "id": "cat-4040",
+    "name": "Scaffolding Couplers & Clamps",
+    "slug": "scaffolding-couplers-clamps",
+    "icon": "crane"
+  },
+  {
+    "id": "cat-4083",
+    "name": "Scaffolding Boards & Platforms",
+    "slug": "scaffolding-boards-platforms",
+    "icon": "crane"
+  },
+  {
+    "id": "cat-1459",
+    "name": "Scaffolding Accessories",
+    "slug": "scaffolding-accessories",
+    "icon": "crane"
+  }
+]

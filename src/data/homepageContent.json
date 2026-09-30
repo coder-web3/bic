@@ -1,0 +1,244 @@
+{
+  "hero": {
+    "watermark": "RENTAL",
+    "scrollDownText": "SCROLL DOWN",
+    "bottomTagline": "BUILDING A STRONGER TOMORROW",
+    "slides": [
+      {
+        "image": "/uploads/upload-1790683065076-9e8f0f03-0857-455f-96cb-c5088457c58e.avif",
+        "subheading": "WELCOME TO BEST INTERNATIONAL CONTRACTING COMPANY",
+        "heading1": "Building Global Landmarks",
+        "headingHighlight": "with Saudi Expertise",
+        "heading2": "",
+        "desc": "The Best International for Heavy Equipment Rental and Contracting is a premier provider of industrial solutions and general trading."
+      },
+      {
+        "image": "/uploads/upload-1790334400909-Untitled_design__9_.png",
+        "subheading": "EMPOWERING YOUR WORKFORCE WITH PRECISION",
+        "heading1": "High-Quality Recruitment Services",
+        "headingHighlight": "for Lasting Success",
+        "heading2": "",
+        "desc": "We specializes in strategic manpower placement, delivering experienced and skilled talent that aligns with your company’s goals."
+      },
+      {
+        "image": "/uploads/upload-1790334449156-Untitled_design__11_.png",
+        "subheading": "MODERN FLEET, SKILLED OPERATORS, RELIABLE RESULTS",
+        "heading1": "Efficient Equipment Rental Solutions",
+        "headingHighlight": "for Every Project",
+        "heading2": "",
+        "desc": "Our advanced equipment rental service combines high-performance machinery to ensure safe, efficient, and on-schedule project execution."
+      }
+    ]
+  },
+  "about": {
+    "badge": "WHO WE ARE",
+    "headingLine1": "Crafting Worldwide",
+    "headingHighlight": "Landmarks",
+    "headingLine2": "From Saudi Soil",
+    "leadParagraph": "The Best International for Heavy Equipment Rental and Contracting is a leading provider of industrial solutions and general trading.",
+    "secondaryParagraph": "We specialize in comprehensive contracting services, offering equipment rentals, manpower provision, and materials supply for construction projects. Our commitment to quality and efficiency ensures successful project execution.",
+    "ctaButtonText": "Explore Our Story",
+    "ctaButtonLink": "/about-us",
+    "bottomTagline": "Building A Stronger Tomorrow",
+    "image": "/uploads/upload-1790337601397-upload-1790336586886-c6401109-dda8-48f7-a499-3174ab72a87a.avif",
+    "redBoxText": "Saudi Arabia\nTo The World",
+    "darkBoxTextLine1": "More Than\nProjects",
+    "darkBoxTextLine2": "A Stronger\nTomorrow",
+    "statBoxValue": "100%",
+    "statBoxLabel": "Trust & Experience"
+  },
+  "coreValues": {
+    "badge": "OUR CORE VALUES",
+    "headingLine1": "Core Principles",
+    "headingHighlight": "That Define",
+    "headingLine2": "Our Culture",
+    "desc": "Guided by strong values, we build lasting partnerships and deliver excellence in every project. Our commitment to these principles ensures that we consistently exceed expectations.",
+    "ctaText": "DISCOVER OUR PROCESS",
+    "ctaLink": "/about-us",
+    "items": [
+      {
+        "num": "01",
+        "title": "Accountability & Professionalism",
+        "desc": "Owning every phase of the project lifecycle—from initial planning through to final execution—while consistently upholding a high level of professionalism in every interaction.",
+        "image": "/uploads/upload-1790663302973-Accountability___Professionalism.avif",
+        "imageAlt": "Accountability & Professionalism in construction management",
+        "icon": "users"
+      },
+      {
+        "num": "02",
+        "title": "Integrity & Transparency",
+        "desc": "Building trust and fostering open communication by prioritizing honesty and transparency in every interaction with clients and vendors.",
+        "image": "/uploads/upload-1790663558043-NEWW.avif",
+        "imageAlt": "Integrity & Transparency on site",
+        "icon": "shield"
+      },
+      {
+        "num": "03",
+        "title": "Data-Driven Improvement",
+        "desc": "Leveraging data-driven insights to make informed decisions, optimizing efficiency, and improving outcomes across every project and operation.",
+        "image": "/uploads/upload-1790663369551-Data-Driven_Improvement.avif",
+        "imageAlt": "Data-Driven industrial improvement",
+        "icon": "chart"
+      },
+      {
+        "num": "04",
+        "title": "Learning & Innovation",
+        "desc": "Keeping pace with industry advancements, continuously improving skills and adopting new techniques to lead in the contracting field.",
+        "image": "/uploads/upload-1790663393249-Learning___Innovation.avif",
+        "imageAlt": "Industrial technology learning and innovation",
+        "icon": "lightbulb"
+      }
+    ]
+  },
+  "services": {
+    "badge": "OUR EXPERTISE",
+    "headingLine1": "Tailored Solutions For ",
+    "headingHighlight": " Every Business Need",
+    "desc": "From contracting to equipment rental, manpower to material supply, we provide end-to-end industrial solutions to support your projects at every stage.",
+    "watermark": "BiC.",
+    "slogan": "BUILDING\nA BETTER\nTOMORROW",
+    "exploreText": "EXPLORE OUR SERVICES",
+    "items": [
+      {
+        "num": "01",
+        "title": "Contracting Services",
+        "slug": "/services/contracting-services",
+        "desc": "We offer tailored contracting services, including premium scaffolding solutions, to ensure safety in all construction and maintenance projects.",
+        "img": "/uploads/upload-1790394984806-Untitled_design__6_.avif",
+        "iconSvg": "<path d=\"M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z\"/><path d=\"M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5\"/><path d=\"M4 15v-3a6 6 0 0 1 6-6h0\"/><path d=\"M14 6h0a6 6 0 0 1 6 6v3\"/>"
+      },
+      {
+        "num": "02",
+        "title": "Manpower Supply",
+        "slug": "/services/manpower-supply",
+        "desc": "We are a fast-growing manpower placement company offering high-quality recruitment services tailored to meet the business community's needs.",
+        "img": "/uploads/upload-1790395612132-Untitled_design__7_.avif"
+      },
+      {
+        "num": "03",
+        "title": "Industrial Material Supply",
+        "slug": "/services/industrial-material-supply",
+        "desc": "We supply high-quality materials across industries, ensuring timely delivery. Our commitment is to provide exceptional supplies that meet your needs.",
+        "img": "/uploads/upload-1790395852878-Untitled_design__8___1_.avif"
+      },
+      {
+        "num": "04",
+        "title": "Equipment Rental",
+        "slug": "/services/equipment-rental",
+        "desc": "We offer equipment rental services with a new fleet of high-performance machinery, enhancing client operations and ensuring timely project completion.",
+        "img": "/uploads/upload-1790396052857-Untitled_design__9_.avif"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "badge": "WHY CHOOSE US",
+    "headingLine1": "We Provide The",
+    "headingHighlight": "Guaranteed Quality",
+    "desc": "Trusted by industry leaders, we deliver excellence through top-tier equipment, skilled manpower, and reliable support for seamless project completion.",
+    "image": "/uploads/upload-1790664992299-side-img.avif",
+    "features": [
+      {
+        "title": "The Best Quality\nOf Services",
+        "desc": "Our commitment to excellence guarantees top-tier service tailored to meet every customer’s needs.",
+        "image": "/uploads/upload-1790664812394-new-img2.avif",
+        "imageAlt": "The Best Quality Of Services",
+        "icon": "users"
+      },
+      {
+        "title": "Skilled Teamwork &\nCollaboration",
+        "desc": "Empowering success through skilled teamwork and seamless collaboration.",
+        "image": "/uploads/upload-1790664449691-img02.avif",
+        "imageAlt": "Skilled Teamwork & Collaboration",
+        "icon": "shield"
+      },
+      {
+        "title": "Transparent\nCommunication",
+        "desc": "Ensuring trust through transparent and open communication every step of the way.",
+        "image": "/uploads/upload-1790664647112-6e3d542b-d26b-45e3-a298-d72269f4235d.avif",
+        "imageAlt": "Transparent Communication",
+        "icon": "hardhat"
+      }
+    ]
+  },
+  "clients": {
+    "badge": "YOUR SUCCESS IS OUR COMMITMENT",
+    "headingLine1": "We Proudly Serve",
+    "headingHighlight": "100+",
+    "headingLine2": "Industry Leaders",
+    "desc": "Long-term partnerships built on reliability, safety compliance, and consistent execution across Saudi Arabia.",
+    "clients": [
+      {
+        "name": "Samsung Engineering",
+        "logo": "/uploads/upload-1790395166289-Samsung-01__1_.png",
+        "fallback": "SAMSUNG\nENGINEERING",
+        "color": "#1428A0"
+      },
+      {
+        "name": "Hyundai Engineering & Construction",
+        "logo": "/uploads/upload-1790395201800-HYUNDAI-01__1_.png",
+        "fallback": "HYUNDAI",
+        "color": "#003087"
+      },
+      {
+        "name": "Sicim",
+        "logo": "/uploads/upload-1790395222132-SICIM-01__1_.png",
+        "fallback": "SICIM",
+        "color": "#E62E2D"
+      },
+      {
+        "name": "Archirodon",
+        "logo": "/uploads/upload-1790395298288-ARCHIRODON-01__1_.png",
+        "fallback": "ARCHIRODON",
+        "color": "#004B87"
+      },
+      {
+        "name": "ALEC Contracting",
+        "logo": "/uploads/upload-1790395548791-AlEC-01__1_.png",
+        "fallback": "ALEC",
+        "color": "#E62E2D"
+      },
+      {
+        "name": "Saudi Aramco",
+        "logo": "/uploads/saudi-aramco.svg",
+        "fallback": "ARAMCO",
+        "color": "#009A44"
+      },
+      {
+        "name": "SABIC",
+        "logo": "/uploads/sabic.svg",
+        "fallback": "SABIC",
+        "color": "#009A44"
+      }
+    ],
+    "stats": [
+      {
+        "num": "5+",
+        "raw": 5,
+        "label": "Years of Success",
+        "suffix": "+",
+        "iconSvg": "<path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/>"
+      },
+      {
+        "num": "100+",
+        "raw": 100,
+        "label": "Clients Served",
+        "suffix": "+",
+        "iconSvg": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/>"
+      },
+      {
+        "num": "200+",
+        "raw": 200,
+        "label": "Projects Delivered",
+        "suffix": "+",
+        "iconSvg": "<path d=\"M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z\"/><polyline points=\"14 2 14 8 20 8\"/><path d=\"M12 18v-6\"/><path d=\"m9 15 3 3 3-3\"/>"
+      },
+      {
+        "num": "99%",
+        "raw": 99,
+        "label": "Client Retention",
+        "suffix": "%",
+        "iconSvg": "<path d=\"M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3\"/>"
+      }
+    ]
+  }
+}

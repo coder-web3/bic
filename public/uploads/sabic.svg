@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" fill="none">
+  <!-- SABIC Bold Typographic Logo -->
+  <text x="20" y="52" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#006699" letter-spacing="1">sabic</text>
+  <!-- Accent bar/dots -->
+  <circle cx="170" cy="30" r="4" fill="#E62E2D"/>
+  <rect x="20" y="60" width="150" height="3" rx="1.5" fill="#84BD00"/>
+</svg>

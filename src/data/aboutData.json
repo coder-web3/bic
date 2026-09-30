@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "badge": "WHO WE ARE",
+    "title": "Crafting Worldwide",
+    "titleAccent": "Landmarks",
+    "description": "The Best International for Heavy Equipment Rental and Contracting is a leading company in Industial solution, general trading, specializing in comprehensive contracting services that include equipment rentals, manpower provision, and materials supply for construction projects.",
+    "bgImage": "/uploads/upload-1790665780547-Crafting_Worldwide_Landmarks.avif",
+    "watermark": "BIC",
+    "taglines": [
+      "FOUNDED · 1994",
+      "SAUDI ARAMCO APPROVED",
+      "KINGDOM OF SAUDI ARABIA"
+    ],
+    "stats": [
+      {
+        "value": "5+",
+        "label": "Years of success"
+      },
+      {
+        "value": "100+",
+        "label": "Clients Served"
+      },
+      {
+        "value": "200+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "99%",
+        "label": "Happy Clients"
+      }
+    ]
+  },
+  "whoWeAre": {
+    "badge": "WHO WE ARE",
+    "headingLine1": "Crafting Worldwide",
+    "headingHighlight": "Landmarks",
+    "headingLine2": "From Saudi Soil",
+    "leadParagraph": "The Best International for Heavy Equipment Rental and Contracting is a leading company in Industial solution, general trading, specializing in comprehensive contracting services that include equipment rentals, manpower provision, and materials supply for construction projects.\n",
+    "secondaryParagraph": "Our success is underpinned by a highly skilled team of professionals who are not only technically proficient but also deeply committed, driving our continuous growth. We excel in managing diverse construction disciplines such as civil/building, electrical, piping, mechanical construction and industrial support services.\n\n",
+    "ctaButtonText": "Get In Touch",
+    "ctaButtonLink": "/contact-us",
+    "bottomTagline": "Delivering secure, dependable, and pragmatic solutions",
+    "image": "/uploads/upload-1790665969503-From_Saudi_Soil.avif",
+    "redBoxText": "Saudi Arabia\nTo The World",
+    "darkBoxTextLine1": "More Than\nProjects",
+    "darkBoxTextLine2": "A Stronger\nTomorrow",
+    "statBoxValue": "100%",
+    "statBoxLabel": "Trust & Experience",
+    "features": [
+      {
+        "label": "Contracting\nServices"
+      },
+      {
+        "label": "Electrical &\nMechanical"
+      },
+      {
+        "label": "Piping &\nFabrication"
+      },
+      {
+        "label": "Industrial\nScaffolding"
+      }
+    ]
+  },
+  "ethos": {
+    "badge": "OUR ETHOS",
+    "headingLine1": "Core Principles That Define",
+    "headingHighlight": "Our Culture and Service",
+    "leadParagraph": "Central to our ethos is a steadfast dedication to zero harm, placing utmost importance on health, community welfare, and environmental responsibility. Our primary goal is to deliver secure, dependable, and pragmatic solutions to meet the needs of our clients. ",
+    "secondaryParagraph": "With a solid reputation built on exceptional performance, The Best International is synonymous with unmatched customer satisfaction. Our unwavering commitment ensures that we uphold the highest standards in quality and service delivery, never compromising on excellence.",
+    "image": "/uploads/upload-1790676470228-about2.avif",
+    "cornerBadge": {
+      "line1": "STRONG",
+      "line2": "VALUES",
+      "line3": "LASTING IMPACT"
+    },
+    "items": [
+      {
+        "id": "ethos-1",
+        "icon": "ShieldCheck",
+        "title": "Accountability & Professionalism",
+        "desc": "Owning every phase of the project lifecycle—from initial planning through to final execution—while consistently upholding a high level of professionalism in every interaction."
+      },
+      {
+        "id": "ethos-2",
+        "icon": "ShieldCheck",
+        "title": "Integrity & Transparency",
+        "desc": "Building trust and fostering open communication by prioritizing honesty and transparency in every interaction with clients and vendors."
+      },
+      {
+        "id": "ethos-3",
+        "icon": "Cog",
+        "title": "Data-Driven Decisions",
+        "desc": "Leveraging data-driven insights to inform decisions, optimizing the accuracy, efficiency, and impact of project planning and execution."
+      },
+      {
+        "id": "ethos-4",
+        "icon": "Sparkles",
+        "title": "Commitment to Learning & Innovation",
+        "desc": "Keeping pace with industry advancements, continuously improving skills and adopting new techniques to stay ahead in the field."
+      }
+    ]
+  },
+  "visionMission": {
+    "badge": "OUR VISION & MISSION",
+    "headingLine1": "Building a",
+    "headingHighlight": "Stronger Tomorrow",
+    "description": "Our vision and mission guide our commitment to industrial solutions, client satisfaction, professional growth, and responsible business practices.",
+    "leftImage": "/uploads/upload-1790676302967-about3.avif",
+    "leftBadge": {
+      "line1": "PEOPLE",
+      "line2": "PROJECTS",
+      "line3": "PROGRESS"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To emerge as a premier industrial solutions provider by consistently exceeding client expectations, cultivating a dynamic professional environment that nurtures strong relationship with customers, employees and suppliers.\n\n",
+      "image": "/uploads/upload-1790681648145-1234.avif",
+      "pill": {
+        "line1": "INDUSTRIAL",
+        "line2": "SAUDI ARABIA",
+        "line3": "STRONGER FUTURE"
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "desc": "Our mission is to conduct our business with a commitment to international best practices, delivering timely and responsible solutions that consistently provide value to our clients, customers, and partners. We prioritize our employees as the cornerstone of our organization, dedicated to recruiting, training, and retaining competent individuals who are essential to achieving our goals.",
+      "image": "/uploads/upload-1790681653132-4567.avif",
+      "pill": {
+        "line1": "CLIENTS",
+        "line2": "PARTNERSHIPS",
+        "line3": "PROGRESS"
+      }
+    }
+  },
+  "seo": {
+    "metaTitle": "About Best International Contracting Company | Jubail",
+    "metaDescription": "Learn about Best International Contracting Company, its vision, mission, capabilities, project experience and industrial support presence in Jubail, Saudi Arabia.",
+    "focusKeyword": "About Best International Contracting Saudi Arabia",
+    "canonicalUrl": "/about-us",
+    "ogImage": "/uploads/upload-1790665969503-From_Saudi_Soil.avif"
+  }
+}

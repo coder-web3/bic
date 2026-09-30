@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "badge": "VISUAL MEDIA & SITE ARCHIVE",
+    "title": "Project Execution &",
+    "titleAccent": "Media Gallery",
+    "description": "Explore Best International Contracting's comprehensive visual showcase of heavy equipment fleets, industrial plant turnaround operations, civil foundations, and turnkey engineering landmarks across Saudi Arabia.",
+    "bgImage": "/uploads/upload-1790407774913-Civil_Works.avif",
+    "watermark": "GALLERY",
+    "taglines": [
+      "VERIFIED INDUSTRIAL SITES",
+      "SAUDI ARAMCO APPROVED FLEET",
+      "TURNKEY EPC EXCELLENCE",
+      "KINGDOM-WIDE MOBILIZATION"
+    ],
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Verified Site Shots"
+      },
+      {
+        "value": "30+",
+        "label": "Years of Landmarks"
+      },
+      {
+        "value": "100%",
+        "label": "Live Field Projects"
+      },
+      {
+        "value": "HD",
+        "label": "Industrial Visuals"
+      }
+    ]
+  },
+  "settings": {
+    "itemsPerPage": 6,
+    "sectionBadge": "VISUAL PROJECT ARCHIVE",
+    "sectionTitle": "Verified Industrial",
+    "sectionTitleAccent": "Field Media"
+  },
+  "seo": {
+    "title": "Media Gallery & Project Site Photos - BiC",
+    "description": "Explore on-site construction photos, heavy equipment fleet, pipe fabrication, and plant turnaround operations in Saudi Arabia.",
+    "focusKeyword": "Best International Contracting Gallery Saudi Arabia"
+  },
+  "images": []
+}
