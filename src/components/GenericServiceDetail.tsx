@@ -442,6 +442,17 @@ export default function GenericServiceDetail({
   const [data, setData] = useState<any>(serviceData || null);
 
   React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (!window.location.hash) {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+        if ((window as any).__lenis) {
+          (window as any).__lenis.scrollTo(0, { immediate: true });
+        }
+      }
+    }
+  }, [serviceData?.id, serviceData?.slug, title]);
+
+  React.useEffect(() => {
     if (serviceData) {
       setData(serviceData);
     }

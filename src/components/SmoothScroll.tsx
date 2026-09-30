@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 
 export default function SmoothScroll() {
+  const pathname = usePathname();
+  const lenisRef = useRef<Lenis | null>(null);
+
   useEffect(() => {
     // Respect reduced motion preferences
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -34,6 +38,7 @@ export default function SmoothScroll() {
       },
     });
 
+    lenisRef.current = lenis;
     // Make lenis instance available globally if needed for scroll-to triggers
     (window as any).__lenis = lenis;
 
@@ -48,9 +53,24 @@ export default function SmoothScroll() {
     return () => {
       cancelAnimationFrame(rafId);
       lenis.destroy();
+      lenisRef.current = null;
       delete (window as any).__lenis;
     };
   }, []);
+
+  // Guarantee scroll to top (Hero section) on every route navigation unless hash anchor is present
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (!window.location.hash) {
+        if (lenisRef.current) {
+          lenisRef.current.scrollTo(0, { immediate: true });
+        }
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    }
+  }, [pathname]);
 
   return null;
 }
