@@ -979,16 +979,9 @@
               }
             ],
             "industriesBadge": "SECTOR APPLICATIONS",
-            "industriesTitle": "Industries Powered by Our Ground Improvement Services",
+            "industriesTitle": "",
             "industriesDesc": "Delivering specialized ground improvement services solutions to the Kingdom's vital industrial and civil sectors.",
-            "industries": [
-              {
-                "id": "06",
-                "name": "Brownfield and Maintenance Projects",
-                "desc": "Controlled excavation, concrete modifications, repairs and reinstatement around existing assets and operating facilities.\n\n",
-                "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
-              }
-            ],
+            "industries": [],
             "showcaseBadge": "DETAILED EXECUTION",
             "showcaseTitle": "Comprehensive Ground Improvement Services Execution Framework",
             "showcaseDesc": "From pre-planning to field execution and quality sign-off, we provide complete lifecycle delivery.",
@@ -2204,7 +2197,38 @@
         "image": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop"
       }
     ],
-    "industries": [],
+    "industries": [
+      {
+        "id": "01",
+        "name": "Industrial and Manufacturing Facilities",
+        "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "id": "02",
+        "name": "Oil, Gas and Petrochemical Projects",
+        "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "id": "03",
+        "name": "Infrastructure Projects",
+        "image": "https://images.unsplash.com/photo-1504307651254-35680f356f12?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "id": "04",
+        "name": "Commercial and Institutional Buildings",
+        "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "id": "05",
+        "name": "Warehouses and Logistics Facilities",
+        "image": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "id": "06",
+        "name": "Plant Shutdowns and Maintenance Campaigns",
+        "image": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop"
+      }
+    ],
     "showcaseTabs": [
       {
         "id": "01",
@@ -2393,9 +2417,8 @@
     "whyChooseUsTitle": "Built Around Your Project Requirements",
     "whyChooseUsBadge": "WHY CHOOSE US",
     "whyChooseUsDesc": "We bring contracting, manpower, equipment, and material supply together to support projects with clear scope, practical planning, and reliable execution.",
-    "industriesDesc": "",
-    "industriesTitle": "",
-    "industriesBadge": ""
+    "industriesDesc": "We support industrial, infrastructure, commercial, and maintenance projects with defined contracting services tailored to each project environment.",
+    "industriesTitle": "Industries and Project Environments We Support"
   },
   {
     "id": "service-4798",
@@ -2612,7 +2635,7 @@
                 "name": "Temporary Power for Construction, Industrial and Project Work",
                 "title": "Temporary Power for Construction, Industrial and Project Work",
                 "badge": "SCOPE & EXECUTION",
-                "desc": "Generator requirements can vary significantly from one site to another.\n\nA generator supporting temporary offices and lighting may have different operating requirements from one supplying pumps, motors, workshop equipment, or selected construction activities. Electrical demand may also change as a project moves from mobilisation into installation, maintenance, testing, or commissioning.\n\nBefore confirming a rental requirement, it is useful to understand:\n\n- What equipment will be connected\n\n- Available voltage, phase, and frequency information\n- Key Scope / Deliverable\n- Expected operating hour\n- Starting and running loads\n- Generator location\n- Site access and delivery conditions\n- Ventilation and surrounding conditions\n- Required start date\n- Expected rental duration\n\n\nThis information provides a practical starting point for reviewing the generator requirement.",
+                "desc": "Generator requirements can vary significantly from one site to another.\n\nA generator supporting temporary offices and lighting may have different operating requirements from one supplying pumps, motors, workshop equipment, or selected construction activities. Electrical demand may also change as a project moves from mobilisation into installation, maintenance, testing, or commissioning.\n\nBefore confirming a rental requirement, it is useful to understand:\n\n- What equipment will be connected\n\n- Available voltage, phase, and frequency information\n- Key Scope / Deliverable\n- Expected operating hour\n- Starting and running loads\n- Generator location\n- Site access and delivery conditions\n- Ventilation and surrounding conditions\n- Required start date\n- Expected rental duration\n\nThis information provides a practical starting point for reviewing the generator requirement.",
                 "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop",
                 "features": [],
                 "stats": {
@@ -2664,7 +2687,7 @@
                 "name": "Temporary Generator Rental for Short-Term and Project Requirements",
                 "title": "Temporary Generator Rental for Short-Term and Project Requirements",
                 "badge": "SPECIALIZED CAPABILITY",
-                "desc": "Not every temporary power requirement justifies purchasing and maintaining permanent equipment.\n\nOur temporary generator rental Saudi Arabia service can support defined project needs during construction, maintenance, shutdowns, temporary operations, mobilisation, or other planned activities where electrical power is required for a limited period.\n\nThe rental period should be considered alongside:\n\n1. Mobilisation date\nProject start date\nExpected operating period\nPlanned changes in site activity\nDemobilisation requirements\n1. Milestone Execution Step\n\n\nIf the project programme changes or the generator may be required for longer than originally expected, the rental team should be informed early so availability and the updated period can be reviewed.Not every temporary power requirement justifies purchasing and maintaining permanent equipment.\n\nOur temporary generator rental Saudi Arabia service can support defined project needs during construction, maintenance, shutdowns, temporary operations, mobilisation, or other planned activities where electrical power is required for a limited period.\n\nThe rental period should be considered alongside:\n\n1. Mobilisation \ndate\n2. Project start date\n3. Expected operating period\n4. Planned changes in site activity\n\nDemobilisation requirements\nIf the project programme changes or the generator may be required for longer than originally expected, the rental team should be informed early so availability and the updated period can be reviewed.",
+                "desc": "Not every temporary power requirement justifies purchasing and maintaining permanent equipment.\n\nOur temporary generator rental Saudi Arabia service can support defined project needs during construction, maintenance, shutdowns, temporary operations, mobilisation, or other planned activities where electrical power is required for a limited period.\n\nThe rental period should be considered alongside:\n\nMobilisation date\nProject start date\nExpected operating period\nPlanned changes in site activity\nDemobilisation requirements\nIf the project programme changes or the generator may be required for longer than originally expected, the rental team should be informed early so availability and the updated period can be reviewed.",
                 "image": "https://images.unsplash.com/photo-1541888081622-19e48710b144?q=80&w=1000&auto=format&fit=crop",
                 "features": [
                   "Key Deliverable 1",

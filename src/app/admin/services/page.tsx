@@ -1436,7 +1436,7 @@ export default function AdminServicesPage() {
                       </label>
                       <input
                         type="text"
-                        value={activeEntity.heroWatermark || activeEntity.watermark || "BIC"}
+                        value={activeEntity.heroWatermark ?? activeEntity.watermark ?? ""}
                         onChange={(e) => updateEntityField("heroWatermark", e.target.value)}
                         className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         placeholder="e.g. CONTRACTING, CIVIL, PIPING, EQUIPMENT"
@@ -1569,7 +1569,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.overview?.badge || "EXECUTIVE OVERVIEW"}
+                          value={activeEntity.overview?.badge ?? ""}
+                          placeholder="EXECUTIVE OVERVIEW"
                           onChange={(e) => updateEntityNested("overview", "badge", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -1719,7 +1720,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.overview?.statNum || "250+"}
+                          value={activeEntity.overview?.statNum ?? ""}
+                          placeholder="250+"
                           onChange={(e) => updateEntityNested("overview", "statNum", e.target.value)}
                           className="w-full px-2.5 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -1730,7 +1732,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.overview?.statLabel || "Projects Executed"}
+                          value={activeEntity.overview?.statLabel ?? ""}
+                          placeholder="Projects Executed"
                           onChange={(e) => updateEntityNested("overview", "statLabel", e.target.value)}
                           className="w-full px-2.5 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -1741,7 +1744,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.overview?.statSub || "Across Saudi Arabia"}
+                          value={activeEntity.overview?.statSub ?? ""}
+                          placeholder="Across Saudi Arabia"
                           onChange={(e) => updateEntityNested("overview", "statSub", e.target.value)}
                           className="w-full px-2.5 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -1782,10 +1786,10 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.overview?.standardsTitle || "Saudi Aramco & Royal Commission Standards"}
+                          value={activeEntity.overview?.standardsTitle ?? ""}
+                          placeholder="Saudi Aramco & Royal Commission Standards"
                           onChange={(e) => updateEntityNested("overview", "standardsTitle", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none bg-white"
-                          placeholder="e.g. Saudi Aramco & Royal Commission Standards"
                         />
                       </div>
 
@@ -1795,10 +1799,10 @@ export default function AdminServicesPage() {
                         </label>
                         <textarea
                           rows={2}
-                          value={activeEntity.overview?.standardsDesc || "Our QA/QC procedures enforce rigid quality plans, non-destructive testing (NDT), hydro-testing, and complete safety documentation on every contract."}
+                          value={activeEntity.overview?.standardsDesc ?? ""}
+                          placeholder="Our QA/QC procedures enforce rigid quality plans, non-destructive testing (NDT), hydro-testing, and complete safety documentation on every contract."
                           onChange={(e) => updateEntityNested("overview", "standardsDesc", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none bg-white"
-                          placeholder="QA/QC compliance statement..."
                         />
                       </div>
                     </div>
@@ -1824,7 +1828,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.subServicesBadge || (isEditingChildService ? "RELATED WORK PACKAGES" : isEditingSubService ? "SPECIALIZED WORK PACKAGES" : "SPECIALIZED CAPABILITIES")}
+                            value={activeEntity.subServicesBadge ?? ""}
+                            placeholder={isEditingChildService ? "RELATED WORK PACKAGES" : isEditingSubService ? "SPECIALIZED WORK PACKAGES" : "SPECIALIZED CAPABILITIES"}
                             onChange={(e) => updateEntityField("subServicesBadge", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -1835,7 +1840,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.subServicesTitle || (isEditingChildService ? `Related ${currentSubService?.title || "Discipline"} Packages` : isEditingSubService ? `${activeEntity.title} Capabilities & Packages` : "Sub-Services & Contracting Packages")}
+                            value={activeEntity.subServicesTitle ?? ""}
+                            placeholder={isEditingChildService ? `Related ${currentSubService?.title || "Discipline"} Packages` : isEditingSubService ? `${activeEntity.title} Capabilities & Packages` : "Sub-Services & Contracting Packages"}
                             onChange={(e) => updateEntityField("subServicesTitle", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -1847,7 +1853,8 @@ export default function AdminServicesPage() {
                         </label>
                         <textarea
                           rows={2}
-                          value={activeEntity.subServicesDesc || `Explore specialized execution packages and capabilities.`}
+                          value={activeEntity.subServicesDesc ?? ""}
+                          placeholder="Explore specialized execution packages and capabilities."
                           onChange={(e) => updateEntityField("subServicesDesc", e.target.value)}
                           className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                         />
@@ -2068,7 +2075,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.whyChooseUsBadge || "WHY BEST INTERNATIONAL"}
+                            value={activeEntity.whyChooseUsBadge ?? ""}
+                            placeholder="WHY BEST INTERNATIONAL"
                             onChange={(e) => updateEntityField("whyChooseUsBadge", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2079,7 +2087,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.whyChooseUsTitle || `Why Choose BIC for ${activeEntity.title}?`}
+                            value={activeEntity.whyChooseUsTitle ?? ""}
+                            placeholder={`Why Choose BIC for ${activeEntity.title}?`}
                             onChange={(e) => updateEntityField("whyChooseUsTitle", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2091,7 +2100,8 @@ export default function AdminServicesPage() {
                         </label>
                         <textarea
                           rows={2}
-                          value={activeEntity.whyChooseUsDesc || "We eliminate project risks by combining heavy equipment independence, Saudi Aramco certified supervisors, and strict QA/QC compliance."}
+                          value={activeEntity.whyChooseUsDesc ?? ""}
+                          placeholder="We eliminate project risks by combining heavy equipment independence, Saudi Aramco certified supervisors, and strict QA/QC compliance."
                           onChange={(e) => updateEntityField("whyChooseUsDesc", e.target.value)}
                           className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                         />
@@ -2218,7 +2228,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.industriesBadge || "INDUSTRIES WE SERVE"}
+                            value={activeEntity.industriesBadge ?? ""}
+                            placeholder="SECTOR APPLICATIONS"
                             onChange={(e) => updateEntityField("industriesBadge", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2229,7 +2240,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.industriesTitle || `Industries Powered by Our ${activeEntity.title}`}
+                            value={activeEntity.industriesTitle ?? ""}
+                            placeholder={`Industries Powered by Our ${activeEntity.title}`}
                             onChange={(e) => updateEntityField("industriesTitle", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2241,7 +2253,8 @@ export default function AdminServicesPage() {
                         </label>
                         <textarea
                           rows={2}
-                          value={activeEntity.industriesDesc || `Delivering integrated industrial solutions for diverse sectors across Saudi Arabia.`}
+                          value={activeEntity.industriesDesc ?? ""}
+                          placeholder="Delivering integrated industrial solutions for diverse sectors across Saudi Arabia."
                           onChange={(e) => updateEntityField("industriesDesc", e.target.value)}
                           className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                         />
@@ -2364,7 +2377,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.showcaseBadge || "DETAILED EXECUTION"}
+                            value={activeEntity.showcaseBadge ?? ""}
+                            placeholder="DETAILED EXECUTION"
                             onChange={(e) => updateEntityField("showcaseBadge", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2375,7 +2389,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.showcaseTitle || `Comprehensive ${activeEntity.title} Execution Framework`}
+                            value={activeEntity.showcaseTitle ?? ""}
+                            placeholder={`Comprehensive ${activeEntity.title} Execution Framework`}
                             onChange={(e) => updateEntityField("showcaseTitle", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2387,7 +2402,8 @@ export default function AdminServicesPage() {
                         </label>
                         <textarea
                           rows={2}
-                          value={activeEntity.showcaseDesc || `From pre-planning to field execution and quality sign-off, we provide complete lifecycle delivery.`}
+                          value={activeEntity.showcaseDesc ?? ""}
+                          placeholder="From pre-planning to field execution and quality sign-off, we provide complete lifecycle delivery."
                           onChange={(e) => updateEntityField("showcaseDesc", e.target.value)}
                           className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                         />
@@ -2549,7 +2565,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.faqsBadge || "FREQUENTLY ASKED QUESTIONS"}
+                            value={activeEntity.faqsBadge ?? ""}
+                            placeholder="FREQUENTLY ASKED QUESTIONS"
                             onChange={(e) => updateEntityField("faqsBadge", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2560,7 +2577,8 @@ export default function AdminServicesPage() {
                           </label>
                           <input
                             type="text"
-                            value={activeEntity.faqsTitle || `Common Questions About ${activeEntity.title}`}
+                            value={activeEntity.faqsTitle ?? ""}
+                            placeholder={`Common Questions About ${activeEntity.title}`}
                             onChange={(e) => updateEntityField("faqsTitle", e.target.value)}
                             className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                           />
@@ -2572,7 +2590,8 @@ export default function AdminServicesPage() {
                         </label>
                         <textarea
                           rows={2}
-                          value={activeEntity.faqsDesc || `Clear answers regarding our workflows, site access, and project deliverables.`}
+                          value={activeEntity.faqsDesc ?? ""}
+                          placeholder="Clear answers regarding our workflows, site access, and project deliverables."
                           onChange={(e) => updateEntityField("faqsDesc", e.target.value)}
                           className="w-full px-3 py-1.5 border rounded-lg text-sm text-slate-900 bg-white"
                         />
@@ -2659,7 +2678,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.cta?.badge || "READY TO EXECUTE YOUR PROJECT?"}
+                          value={activeEntity.cta?.badge ?? ""}
+                          placeholder="READY TO EXECUTE YOUR PROJECT?"
                           onChange={(e) => updateEntityNested("cta", "badge", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -2671,7 +2691,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.cta?.title || `Need Reliable ${activeEntity.title} for Your Next Project?`}
+                          value={activeEntity.cta?.title ?? ""}
+                          placeholder={`Need Reliable ${activeEntity.title} for Your Next Project?`}
                           onChange={(e) => updateEntityNested("cta", "title", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -2684,7 +2705,8 @@ export default function AdminServicesPage() {
                       </label>
                       <textarea
                         rows={3}
-                        value={activeEntity.cta?.desc || "Get in touch with Best International Contracting Company to discuss project specifications, schedule site visits, or request technical proposals."}
+                        value={activeEntity.cta?.desc ?? ""}
+                        placeholder="Get in touch with Best International Contracting Company to discuss project specifications, schedule site visits, or request technical proposals."
                         onChange={(e) => updateEntityNested("cta", "desc", e.target.value)}
                         className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                       />
@@ -2697,7 +2719,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.cta?.buttonText || activeEntity.cta?.primaryBtnText || "Request Technical Proposal"}
+                          value={activeEntity.cta?.buttonText ?? activeEntity.cta?.primaryBtnText ?? ""}
+                          placeholder="Request Technical Proposal"
                           onChange={(e) => updateEntityNested("cta", "buttonText", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none"
                         />
@@ -2709,7 +2732,8 @@ export default function AdminServicesPage() {
                         </label>
                         <input
                           type="text"
-                          value={activeEntity.cta?.buttonLink || "/contact-us"}
+                          value={activeEntity.cta?.buttonLink ?? ""}
+                          placeholder="/contact-us"
                           onChange={(e) => updateEntityNested("cta", "buttonLink", e.target.value)}
                           className="w-full px-3 py-2 border rounded-lg text-sm text-slate-900 focus:ring-2 focus:ring-red-500 outline-none font-mono"
                         />
